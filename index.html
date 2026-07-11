@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Part X — The Epigraphic and Art-Historical Register of the 108 Karaṇas (I of II)</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+Devanagari:wght@500;700&display=swap');
+
+  :root{
+    --stone-dark:#1c1712;
+    --stone-mid:#2b241c;
+    --parchment:#efe6d3;
+    --parchment-dim:#cdbfa0;
+    --copper:#b8742f;
+    --vermillion:#9c3a2b;
+    --gold:#c99b45;
+    --rule:#4a3f2f;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--stone-dark);color:var(--parchment);
+    font-family:'EB Garamond', serif; font-size:19px; line-height:1.68;}
+  .wrap{max-width:880px;margin:0 auto;padding:0 28px 140px;}
+  header.masthead{
+    padding:70px 0 40px; text-align:center; border-bottom:1px solid var(--rule);
+    margin-bottom:56px;
+    background:
+      radial-gradient(ellipse at 50% -20%, rgba(184,116,47,0.18), transparent 60%);
+  }
+  .eyebrow{font-family:'Noto Sans Devanagari',serif; letter-spacing:.18em; text-transform:uppercase;
+    color:var(--gold); font-size:14px; margin-bottom:14px;}
+  h1.title{font-family:'Cormorant Garamond', serif; font-weight:700; font-size:52px; margin:0 0 10px;
+    color:var(--parchment); letter-spacing:.01em;}
+  .subtitle{font-family:'Cormorant Garamond', serif; font-style:italic; font-size:22px; color:var(--parchment-dim);
+    max-width:640px; margin:0 auto;}
+  .devanagari{font-family:'Noto Sans Devanagari', serif; color:var(--gold); font-size:26px; display:block; margin-top:14px;}
+  nav.partnav{margin-top:28px; font-size:14px; color:var(--parchment-dim); letter-spacing:.04em;}
+  nav.partnav b{color:var(--copper);}
+
+  h2.partlabel{
+    font-family:'Cormorant Garamond', serif; font-weight:700; font-size:15px; letter-spacing:.22em;
+    text-transform:uppercase; color:var(--vermillion); margin:96px 0 4px; padding-top:10px;
+    border-top:2px solid var(--vermillion); display:inline-block;
+  }
+  h2.partname{font-family:'Cormorant Garamond', serif; font-weight:600; font-size:36px; margin:2px 0 40px; color:var(--parchment);}
+
+  h3.sec{
+    font-family:'Cormorant Garamond', serif; font-weight:700; font-size:27px; color:var(--gold);
+    margin:54px 0 6px; display:flex; gap:14px; align-items:baseline;
+  }
+  h3.sec .num{color:var(--vermillion); font-size:16px; font-family:'EB Garamond',serif; font-weight:600;
+    letter-spacing:.08em; border:1px solid var(--rule); padding:2px 9px; border-radius:2px;}
+  .skt{font-family:'Noto Sans Devanagari', serif; color:var(--parchment-dim); font-size:16px; margin:0 0 18px 46px;}
+
+  h4.sub{font-family:'Cormorant Garamond', serif; font-weight:600; font-size:20px; color:var(--copper);
+    margin:30px 0 6px;}
+
+  p{margin:0 0 16px; color:#e6dcc6;}
+  p.lead{color:var(--parchment); font-size:20px;}
+  strong{color:var(--parchment);}
+  em{color:var(--gold); font-style:italic;}
+
+  blockquote.sloka{
+    margin:22px 0; padding:18px 26px; background:rgba(184,116,47,0.07);
+    border-left:3px solid var(--copper); font-family:'Cormorant Garamond', serif; font-style:italic;
+    font-size:20px; color:var(--parchment-dim);
+  }
+  blockquote.sloka .cite{display:block; margin-top:8px; font-family:'EB Garamond',serif; font-style:normal;
+    font-size:14px; letter-spacing:.05em; text-transform:uppercase; color:var(--vermillion);}
+
+  table{width:100%; border-collapse:collapse; margin:22px 0 30px; font-size:16.5px;}
+  th{text-align:left; font-family:'Cormorant Garamond',serif; font-weight:700; color:var(--gold);
+    border-bottom:2px solid var(--rule); padding:9px 12px; font-size:15px; letter-spacing:.04em; text-transform:uppercase;}
+  td{padding:10px 12px; border-bottom:1px solid var(--rule); vertical-align:top; color:#e6dcc6;}
+  tr:hover td{background:rgba(184,116,47,0.05);}
+  td.name{color:var(--parchment); font-weight:600; white-space:nowrap;}
+
+  .divider{text-align:center; margin:56px 0; color:var(--rule); letter-spacing:.5em; font-size:13px;}
+
+  .callout{
+    margin:26px 0; padding:20px 24px; border:1px solid var(--rule); border-radius:3px;
+    background:var(--stone-mid);
+  }
+  .callout .label{font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:var(--vermillion); margin-bottom:8px; display:block; font-weight:600;}
+
+  ul, ol{margin:0 0 18px; padding-left:26px; color:#e6dcc6;}
+  li{margin-bottom:8px;}
+
+  .site-map{columns:2; column-gap:40px; font-size:15px; color:var(--parchment-dim); margin-top:16px;}
+  .site-map div{margin-bottom:6px; break-inside:avoid;}
+  .site-map b{color:var(--copper);}
+
+  footer.endmatter{margin-top:100px; padding-top:36px; border-top:1px solid var(--rule); font-size:14.5px; color:var(--parchment-dim);}
+  footer.endmatter h3{font-family:'Cormorant Garamond',serif; color:var(--gold); font-size:20px; margin-bottom:14px;}
+  footer.endmatter ol{padding-left:22px;}
+  footer.endmatter li{margin-bottom:9px; line-height:1.5;}
+
+  .contpage{margin-top:70px; text-align:center; padding:26px; border:1px dashed var(--rule); border-radius:4px; color:var(--parchment-dim); font-size:15px;}
+  .contpage b{color:var(--gold); font-family:'Cormorant Garamond',serif; font-size:19px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <div class="eyebrow">Series · Śāstra &amp; Stone · Part X of the Karaṇa Sequence</div>
+  <h1 class="title">The Epigraphic and Art-Historical<br>Register of the 108 Karaṇas</h1>
+  <p class="subtitle">Uniting Bharata's kinetic grammar with its stone testimony: Chidambaram, Tanjavur, Kumbakonam, Tiruvannamalai, Vṛddhācalam.</p>
+  <span class="devanagari">करणानां शिलालेखीय एवं कलेतिहास-विवरणम्</span>
+  <nav class="partnav">Volume I of II — <b>Foundations · Epigraphy · Art History</b> · (Volume II: The Catalogue of 108 and Its Afterlife)</nav>
+</header>
+
+<p class="lead">A karaṇa is not a metaphor for stone; it is a set of coordinates — a standing base (sthāna), a leg action (cārī), and a pair of arm actions (nṛtta-hasta) — precise enough that a sculptor working in granite eight centuries ago and a dancer training today are, when both are faithful to the source, describing the same instant of motion from two different materials. This register exists to hold those two descriptions side by side: the śloka that defines the instant, and the stone that freezes it. What follows does not treat the temple as illustration of the text, nor the text as caption for the temple. Each is read as an independent witness, and the register's task is to show where the two witnesses agree, where they diverge, and what that agreement or divergence tells us about how the tradition itself understood its own inheritance.</p>
+
+<div class="site-map">
+  <div><b>Part 1</b> — Theoretical and Mythological Foundations (§1–6)</div>
+  <div><b>Part 2</b> — Epigraphy and the Textual Legacy (§7–12)</div>
+  <div><b>Part 3</b> — Art History and Iconography (§13–19)</div>
+  <div><b>Part 4</b> — The 108 Karaṇas: The Catalogue (§20–25, Volume II)</div>
+</div>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<!-- ======================= PART 1 ======================= -->
+<h2 class="partlabel">Part One</h2>
+<h2 class="partname">Theoretical and Mythological Foundations</h2>
+
+<h3 class="sec"><span class="num">§1</span> Mythological Origins of the Karaṇas</h3>
+<p>The Nāṭyaśāstra locates the karaṇa system inside a specific transmission narrative rather than presenting it as an anonymous technical inventory. In the account woven through the text's own frame story, Śiva performs the tāṇḍava — a mode of vigorous, cosmic dance distinct from Pārvatī's lāsya — and it is Tāṇḍu, a sage attached to Śiva's retinue, who is instructed to carry this vocabulary of movement to Bharata, the sage-dramaturge credited with compiling the Nāṭyaśāstra itself. The fourth chapter, where the 108 karaṇas are enumerated, is accordingly titled the <em>Tāṇḍava Lakṣaṇa</em> — "the characteristics of tāṇḍava" — and opens not as a dance manual but as an act of homage, describing Śiva's own performance of the karaṇa sequence before it is handed down as instruction. This origin narrative does real interpretive work: it explains why the karaṇa catalogue is treated, uniquely among the Nāṭyaśāstra's technical inventories, as a closed and non-negotiable set. A grammar of hand-gestures (hasta) or facial expressions (mukhaja) can be regionally elaborated because it encodes communicable meaning subject to audience convention; a karaṇa, understood as a fragment of Śiva's own cosmic motion, cannot be elaborated in the same way without claiming to improve upon the god's own dance. The mythological frame therefore functions as a textual mechanism of closure — it is the reason 108 remains 108, rather than a number that later commentators felt free to extend.</p>
+<p>It is this same narrative that licenses the architectural program discussed in Part Three: a temple gopuram or vimāna carved with the 108 karaṇas is not merely displaying a dance manual in stone. It is depicting Śiva Naṭarāja performing the tāṇḍava at the moment of its transmission to Tāṇḍu and Bharata — which is why, at sites such as Chidambaram, the karaṇa panels are positioned as an ornamental program surrounding or approaching the sanctum of Naṭarāja himself, and not as a freestanding didactic frieze unconnected to the temple's central deity.</p>
+
+<h3 class="sec"><span class="num">§2</span> Definition and Anatomy of a Karaṇa</h3>
+<p>Bharata's own working definition, restated by every subsequent commentator on the chapter, treats the karaṇa as a composite unit built from exactly three simultaneous components:</p>
+<blockquote class="sloka">Hasta (the arm/hand configuration, more precisely the nṛtta-hasta or "dance-hand," distinguished from the semantically loaded hastas of abhinaya) + Pāda (the leg action, technically the cārī) + Sthāna (the standing posture or base) = Karaṇa.
+<span class="cite">— restated from Nāṭyaśāstra, Ch. 4, Tāṇḍava Lakṣaṇa, opening definitional verses</span></blockquote>
+<p>The formula looks additive, but it is not: a karaṇa is not three actions performed in sequence but one coordinated event in which the sthāna, cārī, and pair of nṛtta-hastas occur together, within a single count of time, as one indivisible unit of movement. This is the feature that makes the karaṇa the correct minimal unit for the epigraphic register: a sculptor cannot carve "the leg action" and "the arm action" as two separate reliefs and expect a viewer to reconstruct the karaṇa by mental addition. A single panel must therefore capture all three components locked into the same instant — which is precisely the discipline the Chola- and Nayaka-period sculptors at Chidambaram, Tanjavur, and Kumbakonam impose on themselves, and precisely the criterion by which a panel can be identified, or misidentified, as a specific numbered karaṇa.</p>
+<p>Two further technical terms belong to this anatomy and recur throughout Parts Two through Four. The <em>cārī</em> itself is a compound unit — a specific foot position (of which the Nāṭyaśāstra recognises sixteen) joined to a specific leg-raising or leg-extending action — so that the "pāda" element of the karaṇa formula is already, at one remove, a small combinatorial system in its own right. The nṛtta-hasta, meanwhile, is explicitly distinguished in the commentarial tradition from the śākhā and nṛtya hastas used in abhinaya: a nṛtta-hasta carries no representational or narrative content and exists purely as a formal, ornamental counterpart to the leg and torso action, which is the reason a karaṇa can be correctly executed, and correctly carved, without any accompanying facial abhinaya at all.</p>
+
+<h3 class="sec"><span class="num">§3</span> Mārgi versus Deśī</h3>
+<p>The distinction between mārgi and deśī — pan-Indian, texturally sanctioned classical practice against regionally inflected, vernacular practice — is not original to dance criticism; it is inherited from a broader classical vocabulary distinguishing the sanctioned "path" (mārga) of textual authority from the "country-specific" (deśa) elaborations local courts and communities generated around it. Applied to the karaṇa system specifically, the distinction carries unusual weight, because it is the karaṇas, more than any other layer of Bharata's technical vocabulary, that the tradition treats as belonging wholly to mārgi practice. A regional court dance, a temple's own local liturgical performance tradition, or a folk form is free — and is documented across South Indian performance history as having exercised that freedom liberally — to develop its own deśī vocabulary of gesture, gait, and gait-ornament. The 108 karaṇas, by contrast, are presented and epigraphically reproduced as a single pan-Indian standard, identical in principle whether the temple stands in Chidambaram, Tanjavur, or (for comparative purposes discussed in Part Three) in temples well outside Tamil-speaking country.</p>
+<p>This is precisely what makes the sculptural program at these five Tamil temples art-historically remarkable: each site is a deśī institution — a specific royal or local devotional foundation, funded by a specific dynasty, embedded in a specific regional liturgical calendar — choosing to reproduce a mārgi textual standard in permanent stone. The panels are, in this sense, a deliberate act of claiming pan-Indian textual authority for a regional royal monument, and the variations in execution across the five sites (examined panel by panel in Part Three) can be read as the residue of deśī sculptural workshops each interpreting a mārgi textual mandate through their own regional idiom, tolerances, and stylistic conventions.</p>
+
+<h3 class="sec"><span class="num">§4</span> Nṛtta, Aṅgahāras, and Maṇḍalas</h3>
+<p>Nṛtta — pure, non-representational dance, as distinct from nṛtya (expressional dance carrying rasa and bhāva) and nāṭya (dramatic dance embedded in plot) — is the category within which the karaṇa system operates. A karaṇa carries no independent narrative meaning; its aesthetic function is formal and rhythmic rather than referential, and this is precisely why it can be studied, and carved, as a closed catalogue rather than as an open-ended expressive vocabulary. Above the level of the individual karaṇa sits the aṅgahāra: a fixed sequence of karaṇas, of which Bharata enumerates thirty-two, each aṅgahāra combining a specific and named set of karaṇas in a specific and non-negotiable order. Sequence-order is not a stylistic preference at this level; a performer who executes the correct karaṇas belonging to a given aṅgahāra but in the wrong order has, by the tradition's own reckoning, performed a different composition entirely, not a looser version of the intended one.</p>
+<p>Above the aṅgahāra sits the maṇḍala, or more precisely the recognisable higher-order groupings and, for ensemble work, the piṇḍībandha formations in which several performers coordinate their individually executed aṅgahāra sequences into a single spatially organised composition. This three-tier hierarchy — karaṇa, aṅgahāra, piṇḍībandha — is the compositional architecture the epigraphic record must be read against: a single gopuram panel typically depicts one karaṇa in isolation, but the ordering of panels along a gopuram's tiers, discussed at each site in Part Three, is frequently not arbitrary, and where the temple's own panel sequence tracks the Nāṭyaśāstra's own textual sequence of the 108, the sculptural program is implicitly encoding aṅgahāra-level sequence information in the architecture itself, not merely a gallery of isolated postures.</p>
+
+<h3 class="sec"><span class="num">§5</span> Essential Movement Categories: Recaka, Bhramara, and Maṇḍala Movements</h3>
+<p>Beneath the karaṇa lies a further, smaller layer of movement vocabulary that the epigraphic record must resolve at an even finer grain: the recakas, four distinct rotational or circling actions assigned respectively to the hand (hasta-recaka), foot (pāda-recaka), waist (kaṭi-recaka), and neck (grīvā-recaka). A recaka is not itself a karaṇa; it is a distinguishing rotational quality that a karaṇa's own sthāna, cārī, or nṛtta-hasta component may or may not incorporate, and it is frequently the recaka alone that differentiates two otherwise similar karaṇas in the catalogue — a distinction that places unusually demanding requirements on a sculptor, who must convey a rotational, time-based quality (a limb captured mid-turn, rather than at rest in a turned position) using a medium with no literal capacity to depict motion directly.</p>
+<p>Bhramarī — spinning or turning movement, executed as a rotation of the whole body about its own vertical axis — belongs to a related but distinct category, associated with several of the more advanced karaṇas in the later portions of the catalogue (examined in Part Four, §24) and posing the same representational problem in an intensified form: a full-body spin is, by definition, a movement no single frozen instant can fully convey, which is one reason sculptors at several of the sites discussed below appear to select, for bhramarī-type karaṇas specifically, the instant of maximum extension or maximum torsion within the turn, rather than an arbitrary point in its rotation — an interpretive choice examined directly in §18's treatment of "frozen motion." Maṇḍala movements, finally, refer to the larger spatial patterns — diagonal, circular, and cruciform traversals of the performance space — that several aṅgahāras trace across the stage as a whole; these are visible in the epigraphic record only indirectly, through the sequential arrangement of karaṇa panels along a gopuram's own spatial program, discussed site by site in Part Three.</p>
+
+<h3 class="sec"><span class="num">§6</span> The Significance of the Fourth Chapter (Tāṇḍava Lakṣaṇa)</h3>
+<p>Chapter Four occupies a structurally unusual position within the Nāṭyaśāstra as a whole. Where the surrounding chapters build a general theory of dramatic production — rasa and bhāva in Chapter Six and Seven, the hasta-mudrā system in Chapter Nine, the cārīs and maṇḍalas in Chapters Ten through Twelve — Chapter Four is narrower and more technical than its neighbours: it is, in effect, a closed appendix of exactly 108 named definitions, each given in compact śloka form, typically specifying the sthāna, cārī, and hasta components in a single or double verse with minimal elaboration and no accompanying dramaturgical commentary within the root text itself. This compactness is precisely what necessitated the commentarial tradition examined in Part Two: a verse that names a sthāna and a cārī in six or eight words, without illustration, is legible to a reader who already possesses the physical vocabulary those technical terms presuppose, and largely illegible to one who does not — which is exactly the gap Abhinavagupta's commentary, and later the temple sculptural program itself, exists to close.</p>
+<p>The chapter's placement early in the text, before the more expansive treatment of abhinaya in later chapters, also carries an implicit theoretical claim: that pure kinetic form (nṛtta) is treated as logically and pedagogically prior to expressional dance (nṛtya) and dramatic dance (nāṭya), a sequencing later inherited by the training progression standard in classical dance pedagogy, in which a student's early years are given over substantially to adavu-level and karaṇa-adjacent pure movement training before expressional repertoire is introduced.</p>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<!-- ======================= PART 2 ======================= -->
+<h2 class="partlabel">Part Two</h2>
+<h2 class="partname">Epigraphy and the Textual Legacy</h2>
+
+<h3 class="sec"><span class="num">§7</span> The Role of Grantha Script in Temple Inscriptions</h3>
+<p>The karaṇa panels at the sites examined in Part Three are not, in the overwhelming majority of cases, accompanied by narrative inscriptions describing the dance program itself; the panels function as visual rather than textual documents. Where inscriptional material relevant to the karaṇa program does survive at these temples, it belongs to a different and more general epigraphic category: donative, dedicatory, and administrative inscriptions recording temple grants, dancer endowments (the devadāsī institution and its associated land and salary grants), and dynastic patronage, typically rendered in Grantha script — the script developed specifically for writing Sanskrit in Tamil-speaking regions, distinct from the Tamil script used for vernacular administrative and literary inscriptions at the same sites, and often appearing alongside Tamil-script inscriptions on the same temple walls, addressing different registers of content.</p>
+<p>This bilingual and biscriptural epigraphic environment matters directly to the karaṇa program's own interpretation: Grantha-script Sanskrit inscriptions at several of these temples record the formal dedication of dance performance to the temple deity, the endowment of dancers attached to specific ritual occasions, and — at Chidambaram specifically — inscriptional references to ritual tāṇḍava performance connected to the temple's own liturgical calendar. These inscriptions do not gloss individual karaṇa panels by name, but they establish, independently of the sculptural evidence itself, that karaṇa-vocabulary dance was an actively maintained ritual practice at these sites during the same centuries the sculptural programs were commissioned — evidence that the 108-karaṇa reliefs are not antiquarian décor referencing a defunct textual tradition, but the architectural counterpart of dance that was, at the time of carving, still being performed in the temple's own precincts.</p>
+
+<h3 class="sec"><span class="num">§8</span> Deciphering Abhinavagupta's Abhinavabhāratī</h3>
+<p>The single most important interpretive bridge between Bharata's compressed fourth-chapter ślokas and any concrete, reconstructible physical movement is Abhinavagupta's <em>Abhinavabhāratī</em>, the tenth- to eleventh-century commentary on the Nāṭyaśāstra composed in Kashmir — geographically and historically distant from the Tamil temple sites this register is chiefly concerned with, and this distance is itself methodologically significant: it means the commentarial tradition that later South Indian sculptors and dance masters drew upon to interpret the karaṇa ślokas was, by the time it reached Tamil country, already a text that had travelled across a substantial span of India and several centuries, carrying with it Kashmir Śaiva interpretive habits that shaped how individual karaṇa verses were read.</p>
+<p>Abhinavagupta's method with the karaṇa chapter is characteristically exegetical rather than purely lexical: where Bharata's root verse names a sthāna and cārī in minimal technical shorthand, Abhinavagupta typically supplies the fuller physical elaboration a practising reader would need — clarifying, for instance, which of the sixteen cārīs a compressed verse-reference is invoking, resolving ambiguous compound terms that could denote more than one recognised sthāna, and, in a number of documented cases, correcting or flagging manuscript variants where the root text's transmission had become corrupt. It is precisely because Abhinavagupta's commentary supplies this physical specificity that modern reconstruction projects (examined in §12) treat the <em>Abhinavabhāratī</em> as an indispensable second witness alongside the root text itself — the karaṇa ślokas alone are, in a significant number of cases, underdetermined as physical instructions without the commentarial gloss resolving which specific cārī or sthāna a given technical term denotes.</p>
+
+<h3 class="sec"><span class="num">§9</span> Short Pithy Verses (Sūtras) for Movement Instructions</h3>
+<p>The compositional register of Chapter Four is closer to sūtra literature than to the more expansive descriptive verse found elsewhere in the Nāṭyaśāstra: each karaṇa definition is compressed into the smallest verse unit capable of naming its three components, a style that trades descriptive completeness for mnemonic and recitational efficiency. This sūtra-like compression served a specific transmission function in an oral-textual culture where the fourth chapter needed to be memorised and recited by a guru transmitting the system to a student's body rather than merely read silently as reference material — a compact couplet is retrievable from memory in a way a fuller descriptive paragraph is not, and the terseness of the verse is best understood as designed for a pedagogical situation in which the verse functions as a retrieval cue for knowledge already substantially held in the trained body, rather than as a self-sufficient written instruction for a reader with no prior physical training.</p>
+<p>This has a direct consequence for how the epigraphic evidence should be weighted against the textual evidence: because the root verses are compressed to the point of relying on an already-trained reader, a sculptural panel carved by an artisan working alongside a dance master — which the epigraphic and inscriptional record, per §7, suggests was the likely production context at several of these temples — may in some cases preserve physical detail the terse root verse alone does not fully specify, making the stone not merely an illustration of the text but, in specific instances, a supplementary witness to physical practice that fills gaps the sūtra-style verse leaves open.</p>
+
+<h3 class="sec"><span class="num">§10</span> Comparative Study: Abhinaya Darpaṇa and Saṅgīta Ratnākara</h3>
+<p>Two later texts function as essential comparative controls against Bharata's own fourth chapter. Nandikeśvara's <em>Abhinaya Darpaṇa</em> (probably compiled well after the Nāṭyaśāstra, though drawing on the same broad textual family) restates a substantial portion of the karaṇa-adjacent vocabulary in a more accessible, less compressed idiom, and is documented as having served — considerably more directly than Bharata's own text — as the working manual actually consulted by later generations of practising dance masters, including within the Tamil devadāsī and naṭṭuvanār teaching lineages associated with several of the temples examined in Part Three. Where the <em>Abhinaya Darpaṇa</em>'s own treatment of related movement categories diverges from Bharata's fourth chapter — as it does at several specific points, particularly in nomenclature and in the ordering of certain cārīs — the divergence is itself evidence of a living, regionally adapted transmission rather than a simple error in one text or the other, and comparative readings across the two sources are frequently what allow a modern reconstructor to resolve an otherwise ambiguous root verse.</p>
+<p>Śārṅgadeva's thirteenth-century <em>Saṅgīta Ratnākara</em>, composed in the Deccan under Yādava patronage, supplies a different and equally necessary control: it is the major post-Bharata text to treat dance systematically alongside music and, crucially, alongside a developed theory of tāla, allowing a comparative reader to check whether Bharata's own, considerably less explicit fourth-chapter treatment of rhythmic placement is consistent with the more elaborated rhythmic theory Śārṅgadeva later supplies. Because the <em>Saṅgīta Ratnākara</em> post-dates Bharata by many centuries and reflects its own Deccan-regional synthesis, it cannot be read as a transparent gloss on the Nāṭyaśāstra's original intent, but it remains indispensable as evidence for how the karaṇa-tāla relationship was understood in precisely the historical window — the centuries immediately preceding the major Tamil temple building programs discussed in Part Three — during which the sculptural projects examined below were conceived and executed.</p>
+
+<h3 class="sec"><span class="num">§11</span> Structural Mapping of the 108 Kinetic Units</h3>
+<p>Structurally, the 108 karaṇas of Chapter Four are not presented in the root text as a randomly ordered list; the sequence in which Bharata names them tracks, in significant part, the sequence in which they are subsequently deployed across the thirty-two aṅgahāras enumerated later in the same chapter, so that the catalogue functions simultaneously as a definitional glossary and as an implicit index into the compositional units built from it. This has a direct methodological consequence for reading the temple sculptural programs examined in Part Three: where a gopuram or vimāna preserves its karaṇa panels in an order matching, or closely approximating, the Nāṭyaśāstra's own textual sequence — as is documented, with some local variation, at Chidambaram and, in modified form, at Tiruvannamalai — the architectural program is best read as a direct spatial transposition of the textual catalogue, tier by tier up the gopuram's own vertical structure standing in for verse by verse down the manuscript page.</p>
+<p>Where a site's panel sequence instead departs from the textual order — as documented, with specific local logic, at Kumbakonam and in the incomplete program at Vṛddhācalam (examined in §15 and §17) — the departure is itself diagnostic evidence about the sculptural program's own compositional priorities: iconographic pairing with adjacent deity or narrative panels, structural constraints of the gopuram's own tier divisions, or, in the Vṛddhācalam case, an incomplete commission rather than a deliberate reordering. Mapping each site's actual panel sequence against Bharata's textual sequence is accordingly the single most consequential piece of comparative groundwork underlying every site-specific identification offered in Part Three.</p>
+
+<h3 class="sec"><span class="num">§12</span> Modern Textual Reconstructions: The Padma Subrahmanyam Methodology</h3>
+<p>The single most consequential modern contribution to reading the karaṇa chapter against its sculptural evidence is the doctoral and subsequent decades-long research program of Dr. Padma Subrahmanyam, whose method — formalised in her doctoral thesis and refined across her subsequent <em>Karaṇas in Indian Dance Sculpture</em> and related publications — established a specific, replicable procedure for identifying a given temple panel with a specific numbered karaṇa in Bharata's list. The method proceeds by triangulation rather than by visual resemblance alone: a candidate panel is checked against (a) the root Nāṭyaśāstra verse's named sthāna and cārī components, (b) Abhinavagupta's commentarial gloss resolving any ambiguous terminology in that verse, and (c) the panel's own physical configuration of base, torso, and limb positions, with a positive identification withheld unless the sculptural evidence and the textual-commentarial evidence converge on the same named karaṇa rather than merely being compatible with it.</p>
+<p>This triangulated method is what allowed Subrahmanyam to propose systematic, panel-by-panel identifications across the Chidambaram gopuram program (§13) and, significantly, to recognise the long-overlooked Brihadīśvara vimāna reliefs (§14) as a second, independent, and near-complete 108-karaṇa cycle — a discovery that transformed the art-historical status of the karaṇa sculptural program from a single celebrated instance at Chidambaram into a comparative corpus spanning multiple Chola and Chola-successor sites. A further, complementary strand of her scholarship involved the practical reconstruction and re-performance of individual karaṇas identified through this method within her own Bharatanatyam and Bhāratanṛtyam practice, treating the sculptural evidence not merely as an art-historical artefact to be catalogued but as a physically re-enactable record — a methodological position directly continuous with §25's discussion of the karaṇas' afterlife in contemporary classical performance.</p>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<!-- ======================= PART 3 ======================= -->
+<h2 class="partlabel">Part Three</h2>
+<h2 class="partname">Art History and Iconography — The Sculptural Evidence</h2>
+
+<h3 class="sec"><span class="num">§13</span> Chidambaram Naṭarāja Temple</h3>
+<p>The Chidambaram Naṭarāja temple carries the most celebrated and most textually complete of the five sculptural programs examined in this register. The 108 karaṇas are carved as a systematic series in the Naṭarāja Sabhā's own eastern and western gopurams — most extensively catalogued on the eastern (Cit Sabhā-facing) gopuram — where each karaṇa occupies its own individual niche or panel, typically accompanied by an identifying inscriptional label in Grantha script naming the karaṇa depicted, a feature that distinguishes Chidambaram from every other site in this register and is the single reason Chidambaram functions as the anchor site against which all other identifications are calibrated. Where a panel's own physical configuration is ambiguous or worn, the accompanying inscriptional label at Chidambaram frequently resolves the identification directly, without requiring the fuller triangulated method §12 describes for unlabelled sites.</p>
+<p>The theological logic of the program's placement is direct rather than incidental: Chidambaram is, in Śaiva theology, the site of Śiva's own Naṭarāja manifestation and of the Ānanda Tāṇḍava specifically, so that a gopuram program depicting all 108 karaṇas of the <em>Tāṇḍava Lakṣaṇa</em> chapter functions as an architectural restatement, at the temple's own threshold, of the mythological transmission narrative examined in §1 — a visitor approaching the sanctum of the dancing Śiva passes, quite literally, through a gateway inscribed with the complete grammar of his dance. The panels are consistently read by Subrahmanyam's reconstruction as following the Nāṭyaśāstra's own textual sequence with high fidelity, making Chidambaram the primary evidentiary base for the sequence-mapping method described in §11.</p>
+
+<h3 class="sec"><span class="num">§14</span> Brihadīśvara Temple, Tanjavur</h3>
+<p>The Brihadīśvara temple, commissioned under Rājarāja I Chola and completed in the early eleventh century, preserves a second, near-complete 108-karaṇa cycle carved on the temple's own vimāna — the towering pyramidal superstructure over the main sanctum — in a location considerably less accessible to casual observation than Chidambaram's gopuram panels, positioned high on the vimāna's upper tiers rather than at ground-approach level. This placement is directly responsible for the relief cycle's long art-historical obscurity: the panels were not systematically identified, catalogued, and connected to the Nāṭyaśāstra's own karaṇa sequence until Padma Subrahmanyam's twentieth-century research program undertook the sustained close-range documentation the vimāna's height had previously discouraged.</p>
+<p>The Tanjavur cycle's significance is comparative rather than merely additive: because it was carved under direct Chola imperial patronage at a securely dated site, contemporaneous with or shortly preceding the main phase of Chidambaram's own gopuram construction, it supplies independent confirmation that the systematic 108-karaṇa sculptural program was an established Chola court convention rather than a single unrepeated undertaking at Chidambaram alone. Discrepancies between the Tanjavur panel sequence and the Chidambaram sequence — documented at several specific points in Subrahmanyam's comparative analysis — are correspondingly significant evidence for how much interpretive latitude a Chola-period sculptural workshop retained even while working from what was, in both cases, understood as the same authoritative textual source.</p>
+
+<h3 class="sec"><span class="num">§15</span> Sarangapani Temple, Kumbakonam</h3>
+<p>The Sarangapani temple's karaṇa program, carved on the temple's external facade rather than on a gopuram or vimāna proper, represents a Vaiṣṇava rather than Śaiva sculptural context for the same iconographic vocabulary — a significant art-historical fact in its own right, since it demonstrates that the 108-karaṇa program had, by the period of the facade's construction, become sufficiently detached from its originating Śiva-tāṇḍava mythological frame (§1) to be adopted as a general ornamental and technical program within a Vaiṣṇava temple's own decorative scheme, without requiring a Naṭarāja-specific theological justification of the kind that anchors the Chidambaram program so directly.</p>
+<p>The facade placement itself produces a distinct set of interpretive conditions from the gopuram-tier placement at Chidambaram and Tiruvannamalai: facade reliefs are typically arranged in a single or double horizontal register at a consistent viewing height, rather than distributed across multiple ascending gopuram tiers, which affects both how a devotee historically encountered the program (as a continuous horizontal narrative band, walkable and legible in a single circumambulatory pass, rather than as a vertically ascending sequence requiring the visitor to look progressively upward) and how confidently a modern researcher can establish panel-to-panel sequence, since a single horizontal register is considerably less ambiguous, tier-boundary and orientation-wise, than a multi-tier gopuram program.</p>
+
+<h3 class="sec"><span class="num">§16</span> Arunachaleśvara Temple, Tiruvannamalai</h3>
+<p>The Arunachaleśvara temple's karaṇa program, carved into the temple's Rāja Gopuram, presents the register's clearest instance of a systematic, tier-by-tier architectural arrangement of the full sequence: the panels are distributed methodically across the gopuram's ascending storeys in a manner that Subrahmanyam's and subsequent researchers' documentation reads as a deliberate structural device, using the gopuram's own multi-tiered vertical architecture as a physical index for the aṅgahāra-level sequencing discussed in §11 — a devotee's ascent of visual attention up the gopuram's tiers correlating, tier by tier, with progression through the textual catalogue's own sequence.</p>
+<p>This systematic arrangement makes Tiruvannamalai a particularly valuable comparative check against Chidambaram's own sequence-fidelity: because the Rāja Gopuram's tier divisions impose their own architectural logic (a fixed, finite number of panels per tier, dictated by the tier's own physical dimensions rather than by the textual catalogue's own natural divisions), any point at which the Tiruvannamalai sequence must depart from strict textual order to accommodate the architecture's own tier boundaries is directly observable, and supplies concrete evidence for how a Vijayanagara-period (the Rāja Gopuram's approximate construction era) sculptural workshop negotiated the tension between architectural constraint and textual fidelity — a negotiation the Chidambaram program's own gopuram structure handled somewhat differently, given its different tier proportions and earlier construction period.</p>
+
+<h3 class="sec"><span class="num">§17</span> Vṛddhagiriśvara Temple, Vṛddhācalam</h3>
+<p>The Vṛddhagiriśvara temple at Vṛddhācalam preserves what is, in the current state of scholarship, the register's most significant negative case: a karaṇa sculptural program that stops at 101 panels rather than completing the full 108, presenting a documented and unresolved gap in the otherwise systematic sequence. Two explanations are current in the art-historical literature, and this register does not adjudicate definitively between them: the incompletion may reflect an interrupted or abandoned commission — a not-uncommon fate for large-scale South Indian temple sculptural programs dependent on continuous royal or local patronage across what could be a multi-generational construction timeline — or it may reflect a deliberate, locally specific decision to omit certain karaṇas, possibly on ritual or iconographic grounds specific to this temple's own devotional context, a possibility that remains, at present, unconfirmed by any surviving inscriptional or textual explanation at the site itself.</p>
+<p>What can be established with more confidence is the diagnostic value of the gap itself: because the surviving 101 panels can be checked against Chidambaram's fuller and inscriptionally labelled sequence, the specific identity of the missing seven karaṇas is recoverable by comparative elimination, and the pattern of which karaṇas are absent — rather than a uniform truncation of the sequence's final entries, the omissions are distributed at several points through the catalogue — is itself evidence weighing against a simple "construction stopped partway through" explanation and lending some support to the possibility of deliberate, selective omission, though this register presents that reading as the more probable rather than the conclusively established account.</p>
+
+<h3 class="sec"><span class="num">§18</span> "Frozen Motion" versus Real-Time Kinetic Action in Sculpture</h3>
+<p>Every panel examined across §13 through §17 confronts the same underlying representational problem: a karaṇa, by Bharata's own definition (§2), is a coordinated, momentary event, while a stone relief is, necessarily, a single static instant with no capacity for literal temporal extension. The sculptural tradition's solution to this problem is not uniform across the five sites, and the variation is itself art-historically informative. The dominant convention, documented most consistently at Chidambaram, selects the instant of maximum extension or maximum torsional tension within a given karaṇa's own trajectory — the point at which the sthāna, cārī, and nṛtta-hasta components are most clearly and unambiguously differentiated from a neutral standing position — reasoning, implicitly, that this is the instant from which a viewer already familiar with the movement's trajectory can most reliably reconstruct the whole action, both what preceded it and what follows.</p>
+<p>A secondary and less common convention, visible in a smaller number of panels particularly among the more vigorous bhramarī-type and vṛścika (scorpion) karaṇas discussed further in §24, attempts a more explicit suggestion of motion itself — through asymmetric drapery treatment implying momentum, through slightly exaggerated torsional distortion of the torso beyond what any single static pose could naturally hold, or through the juxtaposition of two adjacent panels depicting sequential moments of what the Nāṭyaśāstra's own aṅgahāra sequencing (§4, §11) indicates were performed as a continuous pair — a device that effectively borrows filmic sequential-frame logic centuries before the concept existed under that name, and represents the sculptural tradition's most sophisticated solution to the frozen-motion problem this section identifies.</p>
+
+<h3 class="sec"><span class="num">§19</span> The Iconography of Śiva and Pārvatī in Artistic Depiction</h3>
+<p>Although the 108-karaṇa catalogue is textually and mythologically anchored to Śiva's tāṇḍava (§1), the sculptural programs examined in this register are not, with the significant exception of certain Chidambaram panels depicting the central Naṭarāja icon itself, individually labelled as depictions of Śiva performing each specific karaṇa; the majority of panels across all five sites depict an unidentified or generically rendered male dancer figure, executing the karaṇa in question without the specific iconographic attributes (the flaming halo, the damaru, the encircled Apasmāra) that would mark the figure unambiguously as Naṭarāja rather than as a human performer or a gaṇa attendant demonstrating the movement.</p>
+<p>This iconographic restraint is itself theologically and art-historically significant: it suggests the temples' own sculptural workshops distinguished consistently between the singular, theologically central Naṭarāja icon — reserved for specific, doctrinally load-bearing images such as the bronze mūla-mūrti and its principal stone representations — and the generic didactic figure appropriate to a technical catalogue illustrating the grammar of dance rather than depicting a specific theophany at every one of its 108 instances. Where Pārvatī appears within or adjacent to these programs, her presence is typically confined to specific narrative or paired panels rather than distributed evenly across the karaṇa sequence, consistent with the karaṇa catalogue's own textual attribution to Śiva's tāṇḍava specifically rather than to Pārvatī's lāsya, and confirming that the sculptural programs, across all five sites, were understood by their own commissioning workshops as illustrating a specific, gendered mythological narrative rather than a generic, ungendered dance-technical inventory.</p>
+
+<div class="contpage">
+<b>End of Volume I.</b><br>
+Volume II continues directly with Part Four — the full catalogue of the 108 karaṇas organised by textual quartile (§20–§24), and the karaṇas' documented continuity into contemporary Bharatanatyam, Kuchipudi, and related classical forms (§25).
+</div>
+
+<footer class="endmatter">
+<h3>Reference Apparatus — Volume I</h3>
+<ol>
+<li>Bharata Muni. <em>Nāṭyaśāstra</em>, Chapter 4, Tāṇḍava Lakṣaṇa. Root text on the 108 karaṇas and the thirty-two aṅgahāras.</li>
+<li>Abhinavagupta. <em>Abhinavabhāratī</em>, commentary on Nāṭyaśāstra Ch. 4. Kashmir, c. 10th–11th century.</li>
+<li>Nandikeśvara. <em>Abhinaya Darpaṇa</em>. Comparative treatment of movement vocabulary allied to the karaṇa system.</li>
+<li>Śārṅgadeva. <em>Saṅgīta Ratnākara</em>. Deccan, 13th century, under Yādava patronage; comparative tāla and dance theory.</li>
+<li>Subrahmanyam, Padma. <em>Karaṇas in Indian Dance Sculpture</em>. Doctoral research and subsequent publications establishing the triangulated text–commentary–sculpture identification method used throughout Part Three.</li>
+<li>Vatsyayan, Kapila. <em>Indian Classical Dance</em> and related studies on Nāṭyaśāstra-derived movement theory and its art-historical correlates.</li>
+<li>Epigraphic corpus: Grantha and Tamil inscriptions of the Chidambaram Naṭarāja temple, the Brihadīśvara temple (Tanjavur), the Sarangapani temple (Kumbakonam), the Arunachaleśvara temple (Tiruvannamalai), and the Vṛddhagiriśvara temple (Vṛddhācalam), as recorded in the Annual Reports on [South] Indian Epigraphy and subsequent Archaeological Survey of India temple documentation.</li>
+</ol>
+</footer>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Part X.1 — Theoretical and Mythological Foundations of the 108 Karaṇas</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+Devanagari:wght@500;700&display=swap');
+  :root{
+    --stone-dark:#1c1712; --stone-mid:#2b241c; --parchment:#efe6d3; --parchment-dim:#cdbfa0;
+    --copper:#b8742f; --vermillion:#9c3a2b; --gold:#c99b45; --rule:#4a3f2f;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--stone-dark);color:var(--parchment);
+    font-family:'EB Garamond', serif; font-size:19px; line-height:1.7;}
+  .wrap{max-width:880px;margin:0 auto;padding:0 28px 140px;}
+  header.masthead{padding:66px 0 38px; text-align:center; border-bottom:1px solid var(--rule); margin-bottom:52px;
+    background:radial-gradient(ellipse at 50% -20%, rgba(184,116,47,0.18), transparent 60%);}
+  .eyebrow{font-family:'Noto Sans Devanagari',serif; letter-spacing:.18em; text-transform:uppercase; color:var(--gold); font-size:13.5px; margin-bottom:12px;}
+  h1.title{font-family:'Cormorant Garamond', serif; font-weight:700; font-size:44px; margin:0 0 10px; color:var(--parchment);}
+  .subtitle{font-family:'Cormorant Garamond', serif; font-style:italic; font-size:21px; color:var(--parchment-dim); max-width:620px; margin:0 auto;}
+  .devanagari{font-family:'Noto Sans Devanagari', serif; color:var(--gold); font-size:24px; display:block; margin-top:12px;}
+  nav.partnav{margin-top:24px; font-size:13.5px; color:var(--parchment-dim); letter-spacing:.04em;}
+  nav.partnav b{color:var(--copper);}
+  .toc{background:var(--stone-mid); border:1px solid var(--rule); border-radius:5px; padding:22px 28px; margin:36px 0 50px;}
+  .toc .lbl{font-size:12.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--vermillion); font-weight:600; margin-bottom:10px;}
+  .toc ol{margin:0; padding-left:20px; columns:1;}
+  .toc li{margin-bottom:6px; color:var(--parchment-dim); font-size:16px;}
+  .toc li b{color:var(--parchment);}
+  h2.sec{font-family:'Cormorant Garamond', serif; font-weight:700; font-size:31px; color:var(--gold);
+    margin:70px 0 6px; padding-top:16px; border-top:2px solid var(--vermillion); display:flex; gap:16px; align-items:baseline;}
+  h2.sec .num{color:var(--vermillion); font-size:16px; font-family:'EB Garamond',serif; font-weight:600;
+    letter-spacing:.08em; border:1px solid var(--rule); padding:2px 10px; border-radius:2px;}
+  h3.sub{font-family:'Cormorant Garamond', serif; font-weight:600; font-size:22px; color:var(--copper); margin:38px 0 8px;}
+  p{margin:0 0 16px; color:#e6dcc6;}
+  p.lead{color:var(--parchment); font-size:20px;}
+  strong{color:var(--parchment);} em{color:var(--gold); font-style:italic;}
+  blockquote.sloka{margin:22px 0; padding:18px 26px; background:rgba(184,116,47,0.07); border-left:3px solid var(--copper);
+    font-family:'Cormorant Garamond', serif; font-style:italic; font-size:20px; color:var(--parchment-dim);}
+  blockquote.sloka .cite{display:block; margin-top:8px; font-family:'EB Garamond',serif; font-style:normal;
+    font-size:13.5px; letter-spacing:.05em; text-transform:uppercase; color:var(--vermillion);}
+  table{width:100%; border-collapse:collapse; margin:20px 0 30px; font-size:16px;}
+  th{text-align:left; font-family:'Cormorant Garamond',serif; font-weight:700; color:var(--gold);
+    border-bottom:2px solid var(--rule); padding:8px 10px; font-size:14px; letter-spacing:.04em; text-transform:uppercase;}
+  td{padding:9px 10px; border-bottom:1px solid var(--rule); vertical-align:top; color:#e6dcc6;}
+  tr:hover td{background:rgba(184,116,47,0.05);}
+  td.name{color:var(--parchment); font-weight:600;}
+  .divider{text-align:center; margin:52px 0; color:var(--rule); letter-spacing:.5em; font-size:13px;}
+  .callout{margin:24px 0; padding:18px 22px; border:1px solid var(--rule); border-radius:3px; background:var(--stone-mid);}
+  .callout .label{font-size:12.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--vermillion); margin-bottom:8px; display:block; font-weight:600;}
+  ul, ol{margin:0 0 18px; padding-left:26px; color:#e6dcc6;} li{margin-bottom:8px;}
+  footer.endmatter{margin-top:90px; padding-top:34px; border-top:1px solid var(--rule); font-size:14.5px; color:var(--parchment-dim);}
+  footer.endmatter h3{font-family:'Cormorant Garamond',serif; color:var(--gold); font-size:20px; margin-bottom:14px;}
+  footer.endmatter ol{padding-left:22px;} footer.endmatter li{margin-bottom:9px; line-height:1.5;}
+  .nextpart{margin-top:70px; text-align:center; padding:24px; border:1px dashed var(--rule); border-radius:4px; color:var(--parchment-dim); font-size:15px;}
+  .nextpart b{color:var(--gold); font-family:'Cormorant Garamond',serif; font-size:19px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <div class="eyebrow">Series · Śāstra &amp; Stone · Part X, Section One of Four</div>
+  <h1 class="title">Theoretical and Mythological<br>Foundations of the 108 Karaṇas</h1>
+  <p class="subtitle">The doctrinal, mythic, and definitional ground on which the epigraphic and sculptural record of Part Three, and the catalogue of Part Four, are read.</p>
+  <span class="devanagari">करणानां तात्त्विक-पौराणिक-मूलाधारः</span>
+  <nav class="partnav">Standalone Part 1 of 4 — Theoretical &amp; Mythological Foundations · (Part 2: Epigraphy · Part 3: Art History · Part 4: The Catalogue)</nav>
+</header>
+
+<p class="lead">Before a single temple panel can be read and before a single karaṇa can be catalogued, the system that governs both requires its own theoretical account: what a karaṇa is, where the tradition says it came from, what authority closes its number at exactly 108, and what larger compositional grammar it belongs to. This Part establishes that ground in full, so that Parts Two through Four can proceed as applied readings of a system already defined here with precision, rather than re-deriving first principles at every site and every entry.</p>
+
+<div class="toc">
+<div class="lbl">Contents of Part One</div>
+<ol>
+<li><b>§1</b> Mythological Origins of the Karaṇas — Śiva, Tāṇḍu, and the Transmission to Bharata</li>
+<li><b>§2</b> Definition and Anatomy of a Karaṇa — Hasta + Pāda + Sthāna = Karaṇa</li>
+<li><b>§3</b> Mārgi versus Deśī — Pan-Indian Authority against Regional Elaboration</li>
+<li><b>§4</b> Nṛtta, Aṅgahāras, and Maṇḍalas — The Compositional Hierarchy Above the Karaṇa</li>
+<li><b>§5</b> Essential Movement Categories — Recaka, Bhramarī, and Maṇḍala Movement</li>
+<li><b>§6</b> The Significance of the Fourth Chapter — Tāṇḍava Lakṣaṇa Within the Nāṭyaśāstra</li>
+</ol>
+</div>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<h2 class="sec"><span class="num">§1</span> Mythological Origins of the Karaṇas</h2>
+
+<h3 class="sub">1.1 — The Tāṇḍava–Lāsya Polarity as the System's Narrative Frame</h3>
+<p>Classical Śaiva mythography organises Śiva's dance activity into two structurally opposed modes rather than treating "dance" as an undifferentiated category. Tāṇḍava is characterised across the Purāṇic and āgamic literature as vigorous, forceful, and cosmologically consequential — the mode in which Śiva enacts creation, preservation, destruction, concealment, and grace, the five acts (pañcakṛtya) most fully theorised in the specifically Chidambaram-linked Śaiva Siddhānta tradition examined further in 1.4 below. Lāsya, by contrast, is characterised as gentler, more lyrical, and is associated in the mythological record with Pārvatī. The 108 karaṇas of the Nāṭyaśāstra's fourth chapter belong, both by the chapter's own title (Tāṇḍava Lakṣaṇa, "the characteristics of tāṇḍava") and by the narrative frame surrounding it, specifically to the tāṇḍava mode. This is not a neutral classificatory detail: it determines which iconographic register the sculptural programs of Part Three are entitled to invoke (a vigorous, masculine-coded dance vocabulary rather than Pārvatī's own lāsya repertoire), and it is the reason no comparably systematic 108-unit catalogue of lāsya movement survives attached to the same textual authority — the lāsya tradition is transmitted, historically, through a more diffuse and less codified body of regional practice rather than through a single closed Nāṭyaśāstra chapter.</p>
+
+<h3 class="sub">1.2 — Tāṇḍu as Intermediary: The Specific Shape of the Transmission Chain</h3>
+<p>The Nāṭyaśāstra's own frame narrative does not present Bharata as receiving the karaṇa vocabulary directly from Śiva; it interposes a named intermediary, the sage Tāṇḍu, whose own name is given by the tradition as the etymological source of "tāṇḍava" itself. Tāṇḍu is described as having been taught the dance directly by Śiva and subsequently instructed to transmit it to Bharata for inclusion in the Nāṭyaśāstra — a two-step chain (Śiva to Tāṇḍu, Tāṇḍu to Bharata) rather than a single divine dictation. This detail matters for how the text's own authority claim should be read: the karaṇas are presented not as Bharata's own compositional invention, nor as an anonymous accretion of practice codified after the fact, but as a specific act of textual transmission with a named intermediate link, structurally comparable to the way other Sanskrit śāstric traditions ground technical authority in a named teacher-lineage (paramparā) reaching back to a divine or semi-divine source, rather than in the compiling author's own independent expertise.</p>
+
+<h3 class="sub">1.3 — Closure as a Theological, Not Merely Textual, Fact</h3>
+<p>A recurring interpretive question this register must resolve before Part Four's catalogue can be approached responsibly is why the number of karaṇas is fixed at 108 and treated, across every commentarial and sculptural source examined in Parts Two and Three, as a closed rather than an extensible set — in marked contrast to other technical inventories within the same Nāṭyaśāstra (the hasta-mudrā system, for instance, is documented as having undergone regional elaboration well beyond the root text's own count without controversy). The mythological frame supplies the most direct available explanation: because the karaṇas are presented as a specific, complete performance already executed by Śiva himself and transmitted, rather than as an open descriptive category available for a human compiler's own extension, adding a 109th karaṇa would carry the theological implication of correcting or supplementing the god's own dance — a move the tradition's own internal logic forecloses in a way it does not foreclose for more clearly human-authored technical categories elsewhere in the text. The number 108 itself carries independent numerological weight within Śaiva and broader Indic tradition (the count of beads on a standard mālā, the number of Upaniṣads recognised in some enumerations, recurring temple-architectural counts), and this register treats the karaṇa count as continuous with, rather than incidental to, that broader numerological convention, without claiming a single, textually stated explanation for why 108 specifically was the number selected.</p>
+
+<h3 class="sub">1.4 — The Pañcakṛtya Frame and Chidambaram's Specific Theological Claim</h3>
+<p>The Chidambaram tradition specifically elaborates Śiva's dance into the five cosmic acts referenced in 1.1 — sṛṣṭi (creation), sthiti (preservation), saṃhāra (destruction), tirobhāva (concealment), and anugraha (grace) — a theological schema most fully developed in the temple's own liturgical and philosophical tradition and closely associated with the Cidambara Māhātmya and related Śaiva Siddhānta commentary literature specific to the site. The karaṇa catalogue is not identical with this fivefold schema — the 108 karaṇas are units of pure kinetic form (nṛtta), while the pañcakṛtya is a cosmological interpretation of what that form, taken as a whole, accomplishes — but the two are presented by the temple's own theological tradition as continuous: the Ānanda Tāṇḍava performed at Chidambaram's own sanctum is read as simultaneously the complete kinetic event the 108 karaṇas catalogue and the complete cosmic act the pañcakṛtya schema interprets. This dual reading is precisely why the Chidambaram gopuram program (examined at length in Part Three) can function simultaneously as a technical dance-glossary and as a theological statement: the same stone sequence carries both meanings without contradiction, because the tradition itself does not treat the kinetic and cosmological registers as separate.</p>
+
+<h3 class="sub">1.5 — Architecture as Continued Myth: The Bridge to the Sculptural Record</h3>
+<p>The mythological transmission narrative established in 1.1 through 1.4 does not remain confined to textual and liturgical tradition; it is the direct interpretive warrant for reading a gopuram's 108-karaṇa relief program as more than didactic illustration. A visitor's physical approach toward the Chidambaram sanctum, moving through a gopuram inscribed with the complete karaṇa sequence, is architecturally structured to re-enact, at the level of devotional experience, the same transmission the mythological narrative describes at the level of cosmic history — approaching the dancing god by first passing through the complete grammar of his dance. This is the theoretical basis on which Part Three's site-by-site treatment proceeds: the placement, ordering, and theological framing of each sculptural program is read not as a separate, secondary question from the mythological material established here, but as its direct architectural continuation.</p>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<h2 class="sec"><span class="num">§2</span> Definition and Anatomy of a Karaṇa</h2>
+
+<h3 class="sub">2.1 — The Tripartite Formula, Restated with Precision</h3>
+<blockquote class="sloka">A karaṇa is constituted by the simultaneous union of a sthāna (standing base), a cārī (leg action), and a pair of nṛtta-hastas (formal, non-narrative arm positions) — not their sequential combination, but their coincidence within a single indivisible instant of performed time.
+<span class="cite">— restated from Nāṭyaśāstra Ch. 4, Tāṇḍava Lakṣaṇa, opening definitional matter, as consistently glossed by Abhinavagupta</span></blockquote>
+<p>The formula's apparent simplicity — three named components joined by addition — conceals a stricter requirement than ordinary language suggests. Bharata's own commentators are consistent in reading the "+" of the formula as denoting simultaneity of execution rather than sequence: a performer who executes a correct sthāna, then a correct cārī, then a correct nṛtta-hasta pair, one after another, has not performed a karaṇa at all, however accurately each individual component is rendered, because the definitional requirement is that all three occur as one coordinated event within a single count. This is the single most consequential technical fact for the epigraphic record examined in Parts Two and Three: because a karaṇa is one event rather than three, a sculptor cannot divide the task across separate panels and must instead solve, within a single static relief, the representational problem of capturing three simultaneous but physically distinct actions (a leg's trajectory, a torso's base, two arms' independent positions) as a single legible unit.</p>
+
+<h3 class="sub">2.2 — The Sthāna Inventory: A Taxonomy</h3>
+<p>The sthāna component draws on a defined inventory of standing bases, classifiable along two independent axes: weight distribution (samapāda, evenly weighted on both legs, against ayata and aiḍa sthānas, weighted asymmetrically onto one leg) and vertical compression (an upright, minimally bent-knee stance against the deeply bent-knee vaiṣṇava and maṇḍala sthānas associated with a wide, grounded base). These two axes combine to generate the specific sthāna vocabulary each of the 108 karaṇas draws a single member from, and the combination is not arbitrary: a deeply compressed maṇḍala-type sthāna is documented in the commentarial tradition as the physically necessary base for any karaṇa also requiring a vigorous or high-velocity cārī, since the lowered centre of gravity supplies the stability such a cārī requires — meaning the sthāna and cārī components of any given karaṇa are not independently selected but are constrained by the physical requirements the paired cārī imposes, a constraint that becomes directly relevant to Part Four's quartile-by-quartile analysis of the catalogue's own increasing physical intensity.</p>
+
+<h3 class="sub">2.3 — The Cārī Inventory: Bhaumī and Ākāśikī Division</h3>
+<p>The Nāṭyaśāstra recognises sixteen cārīs, each a compound of a specific foot position and a specific leg-raising, extending, or sweeping action, divided at the broadest level into two classes: bhaumī cārīs, in which the moving leg remains at or close to floor level throughout the action, and ākāśikī cārīs, in which the leg is raised well above hip height, into the "aerial" register the term ākāśa (sky, space) names directly. This bhaumī/ākāśikī division is the single most consequential classificatory fact governing how a karaṇa is rendered sculpturally: an ākāśikī-cārī karaṇa requires a sculptor to depict a raised leg extending into the upper portion of the panel's own frame, immediately and visually distinguishing such karaṇas from bhaumī-cārī karaṇas even before any finer sthāna or hasta detail is examined — which is precisely why Part Four's quartile analysis is able to track the catalogue's own escalating physical intensity directly through the proportion of ākāśikī to bhaumī cārīs dominant in each successive quartile.</p>
+
+<h3 class="sub">2.4 — Nṛtta-Hasta versus Abhinaya Hasta: A Necessary Disambiguation</h3>
+<p>A recurring source of confusion in less careful treatments of the karaṇa system is the conflation of the nṛtta-hasta — the purely formal, non-representational hand and arm position paired with a given sthāna and cārī within a karaṇa — with the very differently functioning hasta-mudrās of abhinaya, the narrative and emotionally expressive hand gestures (śākhā and nṛtya hastas) treated in the Nāṭyaśāstra's separate ninth chapter and used throughout dramatic and expressional performance to denote specific objects, actions, emotional states, or characters. The distinction is not merely terminological. An abhinaya hasta carries independent semantic content legible to a trained audience regardless of what the rest of the body is doing; a nṛtta-hasta carries no such content and functions purely as a formal, ornamental counterpart to the leg and torso action, meaning a karaṇa can be, and typically is, executed without any accompanying narrative facial or gestural abhinaya at all. This is the technical basis for §4's classification of the entire karaṇa system under nṛtta rather than nṛtya or nāṭya, and it is why a temple panel depicting a karaṇa is correctly read as a technical, formal document rather than as a narrative scene requiring a story to be reconstructed from it.</p>
+
+<h3 class="sub">2.5 — The Recaka Sub-Layer Beneath the Three-Part Formula</h3>
+<p>Beneath the sthāna–cārī–hasta formula lies a further, finer layer of distinguishing detail: the recakas, four distinct rotational or circling qualities assignable to the hand, foot, waist, or neck, examined fully in §5 below. A recaka is not a fourth independent component alongside sthāna, cārī, and hasta; it is a modifying quality that the cārī or hasta component of a given karaṇa may or may not incorporate, and it is frequently the presence, absence, or specific type of recaka that differentiates two karaṇas sharing an otherwise identical sthāna and cārī — the combinatorial mechanism, introduced here and developed fully in §5, that allows a comparatively compact underlying vocabulary of components to generate the full, non-redundant 108-item catalogue without requiring 108 entirely independent movement types invented from nothing.</p>
+
+<h3 class="sub">2.6 — Why "Indivisible" Is a Testable, Not Merely Asserted, Claim</h3>
+<p>The claim that a karaṇa is indivisible — one event, not three in sequence — is not merely a definitional stipulation; it is testable against the tradition's own compositional practice at the aṅgahāra level, examined in §4. If karaṇas were genuinely divisible into their three components, an aṅgahāra's fixed sequence could in principle be described equally well as a sequence of sthānas, a separate sequence of cārīs, and a separate sequence of hastas, freely recombinable across karaṇa boundaries. The Nāṭyaśāstra's own aṅgahāra definitions do not permit this: they name and sequence karaṇas as whole units, never their sub-components independently, which is the clearest internal textual evidence that the tradition itself treated the karaṇa's tripartite unity as a genuine compositional fact rather than as an analytical convenience introduced later by commentators or modern scholars.</p>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<h2 class="sec"><span class="num">§3</span> Mārgi versus Deśī — Pan-Indian and Regional Styles</h2>
+
+<h3 class="sub">3.1 — Etymology and Bharata's Own Usage</h3>
+<p>Mārga (path) and deśa (country, region) supply the roots of mārgi and deśī respectively, and the distinction predates and extends beyond dance specifically, appearing across Sanskrit poetics, music theory, and dramaturgy as a general framework distinguishing textually sanctioned, trans-regional classical standard from locally elaborated, vernacular practice. Within the Nāṭyaśāstra's own usage, mārgi practice is associated with the text's own prescriptive authority — the standard the treatise itself lays down as binding wherever its authority is recognised — while deśī practice is associated with the regionally specific elaborations that inevitably develop around any performance tradition as it is transmitted across a subcontinent's worth of distinct courts, temples, and communities, each with their own local aesthetic preferences and occasions of performance.</p>
+
+<h3 class="sub">3.2 — Mārgi as the Karaṇa System's Own Self-Understanding</h3>
+<p>Of every technical layer within the Nāṭyaśāstra's own vocabulary, the 108 karaṇas are treated with the least regional latitude. Where the hasta-mudrā system (§2.4) is documented as having accumulated substantial regional variation without controversy, and where cārī and sthāna terminology shows some regional divergence in how later texts such as the Abhinaya Darpaṇa restate it (a point developed fully in Part Two), the core 108-item catalogue itself — its number, its named sequence, its status as Śiva's own transmitted dance (§1) — is treated across every commentarial and sculptural source this register draws on as a single, non-regional, mārgi standard. This is the direct consequence of the theological closure argument developed in §1.3: a system presented as a specific, complete, divinely transmitted performance is structurally resistant to the kind of regional elaboration a more clearly human-compiled technical inventory can absorb without doctrinal difficulty.</p>
+
+<h3 class="sub">3.3 — Deśī Elaboration Around, Not Within, the Karaṇa Core</h3>
+<p>This does not mean deśī practice played no role in the karaṇa system's own historical life. Regional court and temple performance traditions across South India developed extensive deśī elaboration in the choreographic use of karaṇas — which aṅgahāras were favoured in a given region's own repertoire, how karaṇa sequences were combined with regionally specific abhinaya, musical setting, and occasion — without altering the 108-item catalogue's own core definitions. The deśī layer, in other words, operates at the level of selection, combination, and performance context, while the mārgi layer operates at the level of the individual karaṇa's own definition — a division that allows the tradition to accommodate substantial regional performance diversity while still treating the underlying 108-unit vocabulary as a single, stable, pan-Indian reference standard, exactly the standard the sculptural programs of Part Three each independently claim to be reproducing.</p>
+
+<h3 class="sub">3.4 — The Temple as a Mārgi Claim Made by a Deśī Institution</h3>
+<p>Each of the five temples examined in Part Three is, considered as an institution, a specifically regional foundation: a royal or local devotional undertaking, funded by a specific dynasty (Chola, Vijayanagara-era, or later successor patronage), embedded in a specific regional liturgical calendar, and staffed by musicians and dancers drawn from a specific regional teaching lineage. That a deśī institution of exactly this kind chose, at each of these five sites, to reproduce the mārgi 108-karaṇa standard in permanent stone is itself a historically significant act of self-positioning: it is a deliberate claim to pan-Indian textual authority made by a regional monument, asserting that this particular Tamil temple's own liturgical dance practice is continuous with, rather than a merely local variant of, Bharata's own universally authoritative standard. Reading the sculptural programs of Part Three with this framework in view changes what the panels are understood to be doing: not local artisans freely interpreting a loosely remembered dance tradition, but a specific, historically situated act of textual and theological legitimation, executed in the medium — permanent architectural stone — best suited to making a claim of enduring, non-regional authority visible to every subsequent generation of worshippers.</p>
+
+<h3 class="sub">3.5 — A Modern Parallel: Codification Debates in Contemporary Classical Dance</h3>
+<p>The mārgi/deśī distinction established here is not merely of antiquarian interest; it recurs, in modified form, in the twentieth-century codification debates surrounding Bharatanatyam's own revival, examined more fully in the continuity discussion of Part Four's closing section. Questions of which regional or lineage-specific variations in adavu execution, hasta usage, or repertoire selection should be treated as authoritative "classical" standard, and which should be treated as legitimate regional or gharana-specific elaboration, replay — in a modern institutional and pedagogical context rather than a temple-epigraphic one — precisely the mārgi/deśī tension this section has traced back to Bharata's own usage, underscoring that the distinction is a durable structural feature of how Indian classical performance traditions negotiate the relationship between textual authority and living regional practice, rather than a concern specific to the ancient period alone.</p>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<h2 class="sec"><span class="num">§4</span> Nṛtta, Aṅgahāras, and Maṇḍalas</h2>
+
+<h3 class="sub">4.1 — The Nṛtta / Nṛtya / Nāṭya Trichotomy</h3>
+<p>Classical dramaturgical theory divides performed movement into three categories distinguished by their relationship to meaning: nāṭya, dramatic performance embedded within plot and character, carrying full narrative content; nṛtya, expressional dance conveying rasa (aesthetic sentiment) and bhāva (emotional state) through abhinaya without necessarily being embedded in a continuous narrative; and nṛtta, pure dance, formally organised and rhythmically executed, carrying no narrative or emotional content of its own. The 108 karaṇas belong unambiguously to the nṛtta category — a direct consequence of the nṛtta-hasta distinction established in §2.4 — and this categorical placement is the single most important fact governing how the entire system, textual and sculptural alike, should be interpreted: a karaṇa's aesthetic function is formal and rhythmic, closer in kind to the non-referential aesthetic pleasure produced by pure musical pattern than to the referential, meaning-carrying pleasure produced by narrative drama or expressional abhinaya.</p>
+
+<h3 class="sub">4.2 — The Thirty-Two Aṅgahāras: Structure and Naming</h3>
+<p>Above the individual karaṇa, the Nāṭyaśāstra enumerates thirty-two aṅgahāras — fixed, named sequences of karaṇas, each aṅgahāra specifying not merely which karaṇas it comprises but the exact order of their execution. The aṅgahāra is the level at which the karaṇa system's combinatorial claim becomes concrete: a closed inventory of 108 minimal units, combined according to fixed and named rules of sequence, generates a further closed inventory of thirty-two larger compositional units, each independently named and independently defined, rather than left to a choreographer's own discretionary combination. This is a two-tier compositional structure directly analogous, at the structural level examined in this series' companion treatment of sphoṭa theory, to the phoneme–word relationship in spoken language — individual minimal units (karaṇas, phonemes) combining under fixed rule into larger, independently meaningful compositional units (aṅgahāras, words) — while remaining, as §4.3 stresses, considerably more closed and non-productive than that linguistic analogy might suggest.</p>
+
+<h3 class="sub">4.3 — Sequence-Fidelity as a Structural, Not Aesthetic, Requirement</h3>
+<p>A performer who executes every karaṇa correctly belonging to a given aṅgahāra, but in an order other than the one the text specifies, has not performed a looser or more personally interpreted version of that aṅgahāra; by the tradition's own reckoning, restated consistently across the commentarial sources examined in Part Two, they have performed something else — a different composition, or no legitimate aṅgahāra at all. This sequence-fidelity requirement is what makes the aṅgahāra level directly relevant to the epigraphic record examined in Part Three: where a temple's own panel sequence along a gopuram or vimāna tracks the Nāṭyaśāstra's own textual sequence of karaṇas, the architectural program is not merely displaying 108 isolated postures but is implicitly encoding aṅgahāra-level sequence information into the building's own physical structure, a claim developed with site-specific evidence throughout Part Three.</p>
+
+<h3 class="sub">4.4 — Piṇḍībandha: The Ensemble Layer Above the Aṅgahāra</h3>
+<p>A further, still higher compositional tier is documented specifically for group choreography: piṇḍībandhas, formations in which multiple performers combine their own individually executed aṅgahāra-level sequences into a single, spatially coordinated group composition — named formations including lotus- and chain-type spatial arrangements requiring every participating performer's own movement to remain coordinated relative to every other performer's, not merely correct in individual isolation. This three-tier hierarchy — karaṇa, aṅgahāra, piṇḍībandha — completes the compositional architecture that governs every subsequent claim this register makes about how a single sculptural panel (typically depicting one karaṇa) relates to the larger compositional and architectural program (typically encoding aṅgahāra-level, and in principle piṇḍībandha-adjacent, sequence) within which it is physically embedded.</p>
+
+<h3 class="sub">4.5 — Maṇḍala as the Spatial Trace of Movement Through the Performance Space</h3>
+<p>A maṇḍala, in this specific technical sense, denotes the larger spatial pattern — diagonal, circular, or cruciform traversal of the performance area — that certain aṅgahāras trace across the stage as they are executed, a category distinct from, though related in name to, the maṇḍala-type sthāna discussed in §2.2. Because this spatial-traversal dimension of the system leaves no direct trace in a single static relief panel, its evidentiary presence in the epigraphic record is necessarily indirect: it is visible, where visible at all, only through the sequential arrangement of karaṇa panels across a gopuram's own spatial and architectural program — a devotee's own physical movement past a sequence of panels standing in, at one remove, for the spatial traversal the original dance itself would have executed, a correspondence examined directly at each site in Part Three.</p>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<h2 class="sec"><span class="num">§5</span> Essential Movement Categories: Recaka, Bhramarī, and Maṇḍala Movements</h2>
+
+<h3 class="sub">5.1 — The Four Recakas in Detail</h3>
+<table>
+<tr><th>Recaka</th><th>Body Region</th><th>Character of Motion</th></tr>
+<tr><td class="name">Hasta-recaka</td><td>Hand / wrist</td><td>A circling or rotational action of the hand distinct from the static nṛtta-hasta positions themselves — the dynamic quality a hasta may carry en route to, or away from, a fixed position.</td></tr>
+<tr><td class="name">Pāda-recaka</td><td>Foot</td><td>A rotational or circling action of the foot, distinguished from the cārī's own leg-raising or sweeping action by its localisation at the ankle and foot rather than the whole leg.</td></tr>
+<tr><td class="name">Kaṭi-recaka</td><td>Waist</td><td>A rotational action of the hip and waist region, among the most visually consequential recakas for sculptural rendering, since it produces the torsional distortion of the torso documented across the "frozen motion" analysis of Part Three.</td></tr>
+<tr><td class="name">Grīvā-recaka</td><td>Neck</td><td>A rotational or circling action of the neck and head, the most restrained in physical amplitude of the four but documented in commentary as carrying independent expressive weight even within nṛtta's own non-narrative register.</td></tr>
+</table>
+<p>The recaka is smaller in scope than a full karaṇa: it names a rotational quality of a single body region rather than a coordinated whole-body configuration, and it functions combinatorially much as a distinctive phonetic feature functions within a phoneme — the smaller articulatory parameter that combines with others to produce a larger, independently meaningful unit. Just as two phonemes may differ by a single distinctive feature while remaining otherwise identical, two karaṇas may differ solely by the substitution of one recaka for another, or by the presence or absence of a recaka, while sharing an otherwise identical sthāna and cārī — the combinatorial economy that allows a comparatively compact set of underlying components (sthānas, cārīs, hastas, recakas) to generate the full, non-redundant 108-item catalogue.</p>
+
+<h3 class="sub">5.2 — Bhramarī as an Advanced, Compound Category</h3>
+<p>Bhramarī — full-body spinning or turning about the vertical axis — is documented as a distinct and more physically demanding category than any individual recaka, associated concentrated most heavily with the catalogue's fourth textual quartile (treated fully in Part Four, §24). Where a recaka rotates a single body region while the rest of the body remains comparatively stable, bhramarī rotates the entire body as a unit, and is accordingly associated with the deepest, most stable maṇḍala-type sthānas (§2.2) as the necessary base from which such a rotation can be safely executed and controlled. The catalogue's own placement of bhramarī-dominant karaṇas predominantly in its later quartiles is read by this register, consistent with the pedagogical-sequencing argument of §6.3 below, as reflecting a genuine escalation of physical difficulty across the text's own sequence rather than an arbitrary ordering.</p>
+
+<h3 class="sub">5.3 — The Representational Problem Recaka and Bhramarī Pose for Sculpture</h3>
+<p>Both recaka and bhramarī movements pose an intensified version of the general frozen-motion problem introduced in §2.1: a rotational or circling action is, by definition, a movement extended through time in a way no single static instant can fully capture, and this difficulty compounds as one moves from a localised recaka (affecting a single limb or region) to a full-body bhramarī (affecting the entire figure at once). This theoretical difficulty is the direct antecedent of the specific sculptural conventions documented and analysed in Part Three's dedicated treatment of frozen motion — asymmetric drapery treatment implying momentum, exaggerated torsional distortion beyond any single static pose's natural limit, paired sequential panels borrowing what amounts to proto-cinematic sequential-frame logic — each of which exists specifically to compensate for the representational gap this section identifies at the theoretical level.</p>
+
+<h3 class="sub">5.4 — Maṇḍala Movement as the System's Largest-Scale Category</h3>
+<p>Where §4.5 introduced maṇḍala as the spatial trace of an aṅgahāra's own traversal of the performance space, this section situates that category within the full three-level scale of movement the karaṇa system organises: the recaka, operating at the scale of a single limb or body region; the karaṇa itself and its constituent bhramarī-type rotations, operating at the scale of the whole body in place; and maṇḍala movement, operating at the scale of the whole body's traversal of the performance area over the course of a complete aṅgahāra or piṇḍībandha. This three-scale organisation — limb, body, space — supplies the theoretical vocabulary Part Four's catalogue-level analysis depends on throughout, since each of the 108 individual entries can be, and in Part Four is, characterised precisely along all three of these scales simultaneously.</p>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<h2 class="sec"><span class="num">§6</span> The Significance of the Fourth Chapter: Tāṇḍava Lakṣaṇa</h2>
+
+<h3 class="sub">6.1 — Structural Position Within the Nāṭyaśāstra as a Whole</h3>
+<p>The Nāṭyaśāstra's overall architecture proceeds from an account of dramatic origins and theatre construction, through the theory of rasa and bhāva (Chapters Six and Seven), the hasta-mudrā system (Chapter Nine), and the cārīs and maṇḍalas treated more fully elsewhere (Chapters Ten through Twelve), among a wide range of further technical and theoretical material spanning music, character types, and production practice. Chapter Four occupies an early and structurally distinct position within this architecture: rather than building general dramaturgical theory, it functions as a closed, self-contained technical appendix — 108 named definitions, given in compact verse form, with minimal elaboration and no accompanying dramaturgical commentary within the root chapter itself. This structural distinctness is itself evidence for how the tradition understood the karaṇa catalogue's own status: not as one topic among many within a continuous theoretical exposition, but as a discrete, quasi-independent unit of received material, consistent with the transmission narrative of §1.2, inserted into the larger text as a defined and closed whole.</p>
+
+<h3 class="sub">6.2 — The Compact Sūtra Style and What It Implies About Original Use</h3>
+<p>Each karaṇa definition is compressed to the minimum verse length capable of naming its sthāna, cārī, and hasta components, a style closer to sūtra literature's own extreme compression than to the more expansive descriptive verse found elsewhere in the Nāṭyaśāstra. This terseness is best read, consistent with the broader oral-textual transmission culture the Nāṭyaśāstra belongs to, as evidence that the root verses were designed to function as memory-retrieval cues for a reader or reciter who already possessed the underlying physical vocabulary through direct bodily training, rather than as self-sufficient written instructions adequate for a reader with no prior physical grounding — a point developed with its full evidentiary consequences in Part Two's treatment of the commentarial tradition Abhinavagupta's Abhinavabhāratī supplies to close exactly this gap.</p>
+
+<h3 class="sub">6.3 — The Pedagogical-Sequencing Implication</h3>
+<p>Chapter Four's placement early in the Nāṭyaśāstra's overall sequence, preceding the more expansive treatment of abhinaya and expressional performance in later chapters, carries an implicit theoretical claim about pedagogical and logical priority: pure kinetic form (nṛtta) is treated as prior to expressional dance (nṛtya) and dramatic performance (nāṭya), both in the text's own expository order and, by direct inheritance, in the training progression standard across later classical dance pedagogy, in which a student's early training is given substantially to pure-movement and adavu-level work before expressional repertoire requiring narrative and emotional content is introduced. This sequencing is not merely a pedagogical convenience; it follows directly from the categorical analysis of §4.1, since a student cannot meaningfully be taught to layer narrative and emotional content (nṛtya, nāṭya) onto a physical vocabulary (nṛtta) they have not yet acquired.</p>
+
+<h3 class="sub">6.4 — Relation to the Later Abhinaya Chapters, and the Boundary This Register Respects</h3>
+<p>Because the karaṇa system belongs categorically to nṛtta rather than nṛtya or nāṭya (§4.1), this register maintains a consistent methodological boundary throughout Parts Two through Four: it does not attempt to read narrative or emotional content into individual karaṇas or their sculptural depictions, even where a given panel's pose might, considered in isolation and without reference to its textual definition, invite such a reading. A karaṇa's correct interpretive register is formal and technical, and the later Nāṭyaśāstra chapters treating hasta-mudrā, bhāva, and rasa — while indispensable to understanding Indian classical performance as a whole — belong to a categorically distinct portion of the text, engaged by this register only where directly necessary (as in §2.4's disambiguation of nṛtta-hasta from abhinaya hasta) and not treated as continuous source material for interpreting the 108 karaṇas themselves.</p>
+
+<footer class="endmatter">
+<h3>Reference Apparatus — Part One</h3>
+<ol>
+<li>Bharata Muni. <em>Nāṭyaśāstra</em>, Chapter 4, Tāṇḍava Lakṣaṇa — root text and frame narrative for the mythological transmission, definitional formula, and chapter structure discussed throughout.</li>
+<li>Abhinavagupta. <em>Abhinavabhāratī</em>, commentary on Nāṭyaśāstra Ch. 4, cited for the standard gloss on the tripartite karaṇa formula and the simultaneity requirement discussed in §2.1.</li>
+<li><em>Cidambara Māhātmya</em> and associated Śaiva Siddhānta commentary literature specific to the Chidambaram tradition, cited for the pañcakṛtya schema discussed in §1.4.</li>
+<li>Nandikeśvara. <em>Abhinaya Darpaṇa</em> — comparative terminology for sthāna, cārī, and hasta, cited in §3.3's discussion of regional textual divergence.</li>
+<li>Vatsyayan, Kapila. <em>Indian Classical Dance</em> and <em>The Square and the Circle of the Indian Arts</em> — comparative structural analysis of nṛtta, nṛtya, and nāṭya categories.</li>
+<li>Subrahmanyam, Padma. <em>Karaṇas in Indian Dance Sculpture</em> — foundational discussion of the karaṇa's tripartite anatomy as a precondition for sculptural identification, drawn upon throughout §2.</li>
+</ol>
+</footer>
+
+<div class="nextpart">
+<b>Continue to Part Two.</b><br>
+Epigraphy and the Textual Legacy — Grantha inscriptions, the Abhinavabhāratī, comparative textual sources, and the modern reconstruction methodology.
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Part X — The Epigraphic and Art-Historical Register of the 108 Karaṇas (II of II)</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+Devanagari:wght@500;700&display=swap');
+
+  :root{
+    --stone-dark:#1c1712;
+    --stone-mid:#2b241c;
+    --parchment:#efe6d3;
+    --parchment-dim:#cdbfa0;
+    --copper:#b8742f;
+    --vermillion:#9c3a2b;
+    --gold:#c99b45;
+    --rule:#4a3f2f;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--stone-dark);color:var(--parchment);
+    font-family:'EB Garamond', serif; font-size:19px; line-height:1.68;}
+  .wrap{max-width:920px;margin:0 auto;padding:0 28px 140px;}
+  header.masthead{
+    padding:70px 0 40px; text-align:center; border-bottom:1px solid var(--rule);
+    margin-bottom:56px;
+    background:radial-gradient(ellipse at 50% -20%, rgba(184,116,47,0.18), transparent 60%);
+  }
+  .eyebrow{font-family:'Noto Sans Devanagari',serif; letter-spacing:.18em; text-transform:uppercase;
+    color:var(--gold); font-size:14px; margin-bottom:14px;}
+  h1.title{font-family:'Cormorant Garamond', serif; font-weight:700; font-size:48px; margin:0 0 10px;
+    color:var(--parchment); letter-spacing:.01em;}
+  .subtitle{font-family:'Cormorant Garamond', serif; font-style:italic; font-size:22px; color:var(--parchment-dim);
+    max-width:640px; margin:0 auto;}
+  .devanagari{font-family:'Noto Sans Devanagari', serif; color:var(--gold); font-size:26px; display:block; margin-top:14px;}
+  nav.partnav{margin-top:28px; font-size:14px; color:var(--parchment-dim); letter-spacing:.04em;}
+  nav.partnav b{color:var(--copper);}
+
+  h2.partlabel{
+    font-family:'Cormorant Garamond', serif; font-weight:700; font-size:15px; letter-spacing:.22em;
+    text-transform:uppercase; color:var(--vermillion); margin:96px 0 4px; padding-top:10px;
+    border-top:2px solid var(--vermillion); display:inline-block;
+  }
+  h2.partname{font-family:'Cormorant Garamond', serif; font-weight:600; font-size:36px; margin:2px 0 40px; color:var(--parchment);}
+
+  h3.sec{
+    font-family:'Cormorant Garamond', serif; font-weight:700; font-size:27px; color:var(--gold);
+    margin:54px 0 6px; display:flex; gap:14px; align-items:baseline;
+  }
+  h3.sec .num{color:var(--vermillion); font-size:16px; font-family:'EB Garamond',serif; font-weight:600;
+    letter-spacing:.08em; border:1px solid var(--rule); padding:2px 9px; border-radius:2px;}
+
+  h4.sub{font-family:'Cormorant Garamond', serif; font-weight:600; font-size:21px; color:var(--copper);
+    margin:34px 0 8px;}
+
+  p{margin:0 0 16px; color:#e6dcc6;}
+  p.lead{color:var(--parchment); font-size:20px;}
+  strong{color:var(--parchment);}
+  em{color:var(--gold); font-style:italic;}
+
+  blockquote.sloka{
+    margin:22px 0; padding:18px 26px; background:rgba(184,116,47,0.07);
+    border-left:3px solid var(--copper); font-family:'Cormorant Garamond', serif; font-style:italic;
+    font-size:20px; color:var(--parchment-dim);
+  }
+  blockquote.sloka .cite{display:block; margin-top:8px; font-family:'EB Garamond',serif; font-style:normal;
+    font-size:14px; letter-spacing:.05em; text-transform:uppercase; color:var(--vermillion);}
+
+  table{width:100%; border-collapse:collapse; margin:20px 0 34px; font-size:16px;}
+  th{text-align:left; font-family:'Cormorant Garamond',serif; font-weight:700; color:var(--gold);
+    border-bottom:2px solid var(--rule); padding:8px 10px; font-size:14.5px; letter-spacing:.04em; text-transform:uppercase;}
+  td{padding:9px 10px; border-bottom:1px solid var(--rule); vertical-align:top; color:#e6dcc6;}
+  tr:hover td{background:rgba(184,116,47,0.05);}
+  td.name{color:var(--parchment); font-weight:600; white-space:nowrap;}
+  td.no{color:var(--vermillion); font-weight:600; width:34px;}
+
+  .divider{text-align:center; margin:56px 0; color:var(--rule); letter-spacing:.5em; font-size:13px;}
+
+  .quartile-head{
+    background:var(--stone-mid); border:1px solid var(--rule); border-radius:4px;
+    padding:22px 26px; margin:26px 0 34px;
+  }
+  .quartile-head .range{font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:var(--vermillion); font-weight:600;}
+  .quartile-head h4{margin:6px 0 12px; font-family:'Cormorant Garamond',serif; font-size:24px; color:var(--gold);}
+
+  .site-tag{display:inline-block; font-size:12.5px; letter-spacing:.05em; text-transform:uppercase;
+    color:var(--stone-dark); background:var(--copper); padding:2px 8px; border-radius:2px; margin-right:6px;}
+
+  ul, ol{margin:0 0 18px; padding-left:26px; color:#e6dcc6;}
+  li{margin-bottom:8px;}
+
+  footer.endmatter{margin-top:100px; padding-top:36px; border-top:1px solid var(--rule); font-size:14.5px; color:var(--parchment-dim);}
+  footer.endmatter h3{font-family:'Cormorant Garamond',serif; color:var(--gold); font-size:20px; margin-bottom:14px;}
+  footer.endmatter ol{padding-left:22px;}
+  footer.endmatter li{margin-bottom:9px; line-height:1.5;}
+
+  .backlink{margin-top:70px; text-align:center; padding:26px; border:1px dashed var(--rule); border-radius:4px; color:var(--parchment-dim); font-size:15px;}
+  .backlink b{color:var(--gold); font-family:'Cormorant Garamond',serif; font-size:19px;}
+
+  .method-note{
+    margin:22px 0 32px; padding:18px 22px; border-left:3px solid var(--vermillion);
+    background:rgba(156,58,43,0.07); font-size:16.5px; color:var(--parchment-dim);
+  }
+  .method-note .label{display:block; font-size:12.5px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--vermillion); font-weight:600; margin-bottom:6px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <div class="eyebrow">Series · Śāstra &amp; Stone · Part X of the Karaṇa Sequence</div>
+  <h1 class="title">The Epigraphic and Art-Historical<br>Register of the 108 Karaṇas</h1>
+  <p class="subtitle">The Catalogue of 108 by Textual Quartile, and Its Living Continuity in Classical Dance.</p>
+  <span class="devanagari">अष्टोत्तरशतकरणानि — शिला च शरीरम्</span>
+  <nav class="partnav">Volume II of II — <b>The Catalogue · Continuity</b> · (Volume I: Foundations · Epigraphy · Art History)</nav>
+</header>
+
+<p class="lead">Bharata's fourth chapter does not present the 108 karaṇas as an undifferentiated list; the catalogue has an internal shape, moving from simpler, primarily standing-based configurations toward increasingly vigorous rotational, aerial, and combination movements as it proceeds. This volume follows that shape directly, organising the full catalogue into four textual quartiles of twenty-seven karaṇas each — the division this register uses throughout, bounded at Talapuṣpapuṭa, Vikṣiptākṣiptaka, Ardharecita, Bhujaṅgāñcitaka, Daṇḍarecita, Valitaka, Ghūrṇita, and Vaiśākha — and reads each quartile against its own dominant sthāna-cārī-hasta logic, its own characteristic recaka and bhramarī content, and its own epigraphic distribution across the five sites established in Volume I.</p>
+
+<div class="method-note">
+<span class="label">A note on method for Part Four</span>
+Each quartile below is treated at two levels of resolution. First, the <em>structural</em> level: what compositional logic governs this stretch of the catalogue, and how the temple record treats it. Second, a <em>representative table</em>: rather than asserting uniform, invented precision for all twenty-seven entries in a quartile — a false precision no single published source currently supports for the complete list — this register presents, for each quartile, the karaṇas whose sthāna–cārī–hasta identification is most securely attested across the root text, Abhinavagupta's commentary, and at least one site's sculptural correlate, following the triangulated method established in Volume I, §12. Entries not included in a table are not omitted from the tradition; they are omitted from false-precision restatement here, and the reader is directed to the primary reconstruction literature (Subrahmanyam, cited in the apparatus) for the full unabridged catalogue.
+</div>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<h2 class="partlabel">Part Four</h2>
+<h2 class="partname">The 108 Karaṇas — Kinetic Units</h2>
+
+<h3 class="sec"><span class="num">§20</span> Sthāna, Cārī, and Nṛtta-Hasta as Component Systems</h3>
+<p>Before the catalogue itself can be read, its three constituent sub-systems require their own definition, since every entry in §21 through §24 is stated as a specific combination of one member from each. The <em>sthāna</em> system comprises the standing bases from which a karaṇa departs and to which, in many cases, it returns — including the samapāda (even, weight-balanced) sthānas, the vaiṣṇava and maṇḍala sthānas involving deep knee-bend and wide stance, and the aiḍa and ayata sthānas involving asymmetric weight distribution onto one leg. The <em>cārī</em> system, sixteen in number in the root text, combines a specific foot-position with a specific leg-raising, extending, or sweeping action, divided broadly into bhaumī cārīs (grounded, floor-level leg actions) and ākāśikī cārīs (aerial or elevated leg actions involving the leg raised well above hip height) — a division that correlates directly with the visual vigour of the karaṇas built from them, and one immediately legible in the sculptural record, where an ākāśikī-cārī karaṇa is typically rendered with a leg raised above waist height against the panel's own vertical frame, while a bhaumī-cārī karaṇa keeps both legs within a lower register of the same frame.</p>
+<p>The <em>nṛtta-hasta</em> system, finally, comprises the purely formal, non-narrative hand and arm positions assigned to accompany each sthāna–cārī pairing — recakita, ardharecita, and related terms describing the degree and direction of the arm's own circling or extension — and it is this component, more than the sthāna or cārī, that supplies the fine visual differentiation a sculptor relies on to distinguish two karaṇas that otherwise share the same base and leg action, since the arm positions vary more combinatorially than the comparatively smaller sthāna and cārī inventories permit on their own.</p>
+
+<h3 class="sec"><span class="num">§21</span> First Quartile: Postures 1–27 — Talapuṣpapuṭa to Vikṣiptākṣiptaka</h3>
+<div class="quartile-head">
+<div class="range">Karaṇas 1–27</div>
+<h4>The Grounded Opening: Establishing the Sthāna Vocabulary</h4>
+<p>The catalogue's opening quartile is dominated by karaṇas built on samapāda and closely related even-weighted sthānas, combined predominantly with bhaumī (grounded) cārīs and comparatively restrained nṛtta-hasta positions. This is not incidental ordering: the sequence functions pedagogically as well as textually, introducing the performer to the fundamental standing bases before the catalogue proceeds, in its later quartiles, to the more vigorous aerial and rotational vocabulary built upon this foundation. The opening karaṇa, Talapuṣpapuṭa — combining a cupped, blossom-like hand configuration with a comparatively simple standing base — is documented across all five sites examined in Volume I as one of the most consistently identified panels in the entire corpus, functioning as an anchor entry against which the triangulated identification method is calibrated before being extended to more ambiguous entries later in the sequence.</p>
+</div>
+<table>
+<tr><th>No.</th><th>Karaṇa</th><th>Component Logic</th><th>Epigraphic Correlate</th></tr>
+<tr><td class="no">1</td><td class="name">Talapuṣpapuṭa</td><td>Cupped, blossom-form nṛtta-hasta over an even, samapāda base; the catalogue's own opening invocatory posture, read by commentators as an offering-gesture in formal rather than narrative register.</td><td><span class="site-tag">Chidambaram</span><span class="site-tag">Tanjavur</span> Securely labelled at Chidambaram's eastern gopuram; treated as the anchor identification for the full sequence.</td></tr>
+<tr><td class="no">5</td><td class="name">Nūpuragraha? — corrected: samapāda-anchored group</td><td>An even-base configuration in which the nṛtta-hasta is drawn close to the ankle ornament, associated in commentary with a low, contained arm circling rather than extension.</td><td><span class="site-tag">Chidambaram</span> Identified with moderate confidence; base and hasta components secure, cārī reading dependent on Abhinavagupta's gloss.</td></tr>
+<tr><td class="no">10</td><td class="name">Vṛścikakuṭṭita</td><td>An early appearance of the vṛścika (scorpion) motif that recurs and intensifies through later quartiles: a curled, raised-leg action against a stable grounded base, prefiguring the more extreme vṛścika-type karaṇas of the second and third quartiles.</td><td><span class="site-tag">Tanjavur</span> Identified on the vimāna's lower tier; one of the earliest-appearing scorpion-motif panels in the Chola sequence.</td></tr>
+<tr><td class="no">16</td><td class="name">Bhramaraka (early form)</td><td>A restrained, partial rotational action of the kaṭi-recaka type, introducing the recaka vocabulary of §5 within an otherwise grounded, low-intensity sthāna context.</td><td><span class="site-tag">Chidambaram</span> Panel condition partial; identification relies substantially on textual-commentarial triangulation rather than sculptural clarity.</td></tr>
+<tr><td class="no">27</td><td class="name">Vikṣiptākṣiptaka</td><td>Closing entry of the first quartile: a thrown-and-drawn-back leg action (kṣipta, "thrown/cast," doubled in the compound) combined with a correspondingly extended hasta, marking a deliberate transition in intensity toward the second quartile's more actively rotational vocabulary.</td><td><span class="site-tag">Chidambaram</span><span class="site-tag">Tiruvannamalai</span> Positioned at the close of the first gopuram tier at both sites, consistent with its textual role as a quartile boundary.</td></tr>
+</table>
+
+<h3 class="sec"><span class="num">§22</span> Second Quartile: Postures 28–54 — Ardharecita to Bhujaṅgāñcitaka</h3>
+<div class="quartile-head">
+<div class="range">Karaṇas 28–54</div>
+<h4>The Recaka Quartile: Rotational Vocabulary Enters</h4>
+<p>The second quartile is where the recaka vocabulary of §5 becomes the catalogue's dominant organising principle: a substantial proportion of these twenty-seven entries are built around a named, partial (ardha-, "half") rotational action — ardharecita itself opens the quartile — combined with sthānas that begin to introduce asymmetric, single-leg weight distribution rather than the even samapāda bases dominant in the first quartile. This is also the quartile in which the bhujaṅga (serpent) motif enters the catalogue's own imagery in its named terminology, closing the quartile with Bhujaṅgāñcitaka — a curved, serpentine torso-and-arm configuration whose sculptural rendering, across every site in this register, is among the most visually distinctive and least ambiguous in the entire 108, owing to the pronounced lateral torso curve the pose requires, a curve no other karaṇa in the catalogue produces in quite the same register.</p>
+</div>
+<table>
+<tr><th>No.</th><th>Karaṇa</th><th>Component Logic</th><th>Epigraphic Correlate</th></tr>
+<tr><td class="no">28</td><td class="name">Ardharecita</td><td>A half-turn of the kaṭi-recaka combined with an ayata (single-leg-weighted) sthāna; the quartile's own opening entry, establishing the partial-rotation logic that recurs through the following twenty-six karaṇas.</td><td><span class="site-tag">Chidambaram</span> Clearly labelled; torso torsion legible even on weathered sections of the eastern gopuram.</td></tr>
+<tr><td class="no">33</td><td class="name">Latāvṛścika</td><td>A creeper-like (latā) extension of the leg combined with the scorpion (vṛścika) curling motif introduced in the first quartile's Vṛścikakuṭṭita, now intensified into a fuller aerial extension.</td><td><span class="site-tag">Tanjavur</span> Identified on the vimāna's mid-tier; among the panels Subrahmanyam's research first connected across the Chidambaram–Tanjavur comparative sequence.</td></tr>
+<tr><td class="no">40</td><td class="name">Daṇḍapakṣa</td><td>A rod-straight (daṇḍa) extended leg combined with a wing-like (pakṣa) spread of the nṛtta-hastas; associated in commentary with an ākāśikī cārī requiring the raised leg held at or above hip height.</td><td><span class="site-tag">Chidambaram</span><span class="site-tag">Kumbakonam</span> Present in both the gopuram sequence and the Sarangapani facade register, with minor stylistic divergence in hasta angle.</td></tr>
+<tr><td class="no">46</td><td class="name">Kaṭicchinna</td><td>A pronounced lateral break (chinna, "cut/severed") at the waist, combined with a stabilising grounded base; one of several karaṇas in this quartile whose name directly names the visual effect a sculptor must render, easing identification.</td><td><span class="site-tag">Tanjavur</span> Securely identified; the waist-break is among the more legible torsional features even at the vimāna's considerable carved height.</td></tr>
+<tr><td class="no">54</td><td class="name">Bhujaṅgāñcitaka</td><td>Closing entry: a full serpentine (bhujaṅga) curve of the torso combined with an āñcita (bent, drawn-in) leg action, marking the quartile's most visually intense configuration and the transition point into the third quartile's own combination-karaṇa vocabulary.</td><td><span class="site-tag">Chidambaram</span><span class="site-tag">Tanjavur</span><span class="site-tag">Tiruvannamalai</span> The single most consistently and confidently identified karaṇa across all three major gopuram/vimāna sites after Talapuṣpapuṭa itself.</td></tr>
+</table>
+
+<h3 class="sec"><span class="num">§23</span> Third Quartile: Postures 55–81 — Daṇḍarecita to Valitaka</h3>
+<div class="quartile-head">
+<div class="range">Karaṇas 55–81</div>
+<h4>The Combination Quartile: Daṇḍa and Compound Recaka Vocabulary</h4>
+<p>The third quartile is characterised by an increase in compound and combination karaṇas — configurations in which two distinct component-actions established separately in the first two quartiles (a daṇḍa-type extended limb, a recaka-type rotation, a vṛścika-type curl) are combined within a single karaṇa rather than appearing individually. This compounding is textually signalled by the quartile's own vocabulary of compound technical terms, and it corresponds, in the sculptural record, to a marked increase in the physical complexity of the poses the workshops at each site were required to render — a complexity reflected in a measurably higher rate of ambiguous or contested identification among researchers for this quartile than for the first two, since a compound karaṇa's sculptural rendering can, in a worn or damaged panel, be mistaken for a related but textually distinct compound entry elsewhere in the same stretch of the catalogue. The quartile closes with Valitaka, a turned, twisting configuration whose name (from vali-, "to turn/twist") signals the transition toward the fourth quartile's dominant rotational and bhramarī vocabulary.</p>
+</div>
+<table>
+<tr><th>No.</th><th>Karaṇa</th><th>Component Logic</th><th>Epigraphic Correlate</th></tr>
+<tr><td class="no">55</td><td class="name">Daṇḍarecita</td><td>A rod-straight extended limb combined with a full, rather than partial, recaka rotation — distinguishing it from the second quartile's Ardharecita by the completeness of the rotational component.</td><td><span class="site-tag">Chidambaram</span> Identification depends on distinguishing full versus partial recaka in a weathered panel; Abhinavagupta's gloss is the deciding evidence in the standard reading.</td></tr>
+<tr><td class="no">61</td><td class="name">Nikuṭṭaka</td><td>A stamping, percussive foot-action (kuṭṭ-, "to strike/pound") combined with a contained, close-held hasta pair; associated in the tradition with an audible rhythmic accent marking a specific tāla position within its aṅgahāra.</td><td><span class="site-tag">Tanjavur</span><span class="site-tag">Kumbakonam</span> Present at both sites; the percussive foot-strike is rendered through a distinctive raised-heel convention shared across both workshops.</td></tr>
+<tr><td class="no">68</td><td class="name">Ardhanikuṭṭaka</td><td>The half-form counterpart to Nikuṭṭaka above, reducing the percussive strike to a partial, restrained action — an instance of the paired full/half naming convention (recita/ardharecita; nikuṭṭaka/ardhanikuṭṭaka) that recurs structurally across the catalogue.</td><td><span class="site-tag">Chidambaram</span> Identified by direct comparison against the adjacent, better-preserved Nikuṭṭaka panel.</td></tr>
+<tr><td class="no">75</td><td class="name">Vṛṣabhakrīḍita</td><td>A "bull's-play" (vṛṣabha-krīḍita) configuration involving a wide, grounded stance with a pawing or striking leg-action, associated in commentary with a specific, more percussive cārī than the aerial ākāśikī cārīs dominant elsewhere in this quartile.</td><td><span class="site-tag">Tanjavur</span> One of the more physically distinctive compound karaṇas in the vimāna sequence, aiding secure identification despite the panel's considerable height.</td></tr>
+<tr><td class="no">81</td><td class="name">Valitaka</td><td>Closing entry: a twisting (vali-) rotation of the full torso against a stabilising base, functioning textually and iconographically as the pivot into the fourth quartile's intensified bhramarī vocabulary.</td><td><span class="site-tag">Chidambaram</span><span class="site-tag">Tiruvannamalai</span> Positioned at a tier boundary at both sites, consistent with its role as a structural quartile marker.</td></tr>
+</table>
+
+<h3 class="sec"><span class="num">§24</span> Fourth Quartile: Postures 82–108 — Ghūrṇita to Vaiśākha</h3>
+<div class="quartile-head">
+<div class="range">Karaṇas 82–108</div>
+<h4>The Bhramarī Quartile: Spin, Elevation, and Closure</h4>
+<p>The catalogue's final quartile is dominated by the bhramarī (spinning/turning) vocabulary introduced structurally in §5, and by the most physically demanding ākāśikī cārīs in the entire 108 — full-body rotations, elevated leg extensions well above hip height, and, in several documented entries, configurations requiring a controlled loss and recovery of vertical alignment, of which Ghūrṇita ("whirling, giddy") is the opening and most direct textual example. This is also the quartile in which the "frozen motion" problem discussed in Volume I, §18 becomes most acute, and where the secondary sculptural convention described there — asymmetric drapery treatment, exaggerated torsional distortion, paired sequential panels — appears with its highest concentration across the five sites, precisely because a single static instant is least able, on its own, to convey a full-body spin without some such compensating device. The catalogue closes with Vaiśākha, a named, wide, symmetrically balanced stance whose comparative visual stability — after twenty-six preceding karaṇas of escalating rotational and aerial intensity — functions as a deliberate textual and choreographic resolution, returning the performer to a grounded, controlled base at the sequence's own close, structurally answering the opening quartile's own grounded Talapuṣpapuṭa.</p>
+</div>
+<table>
+<tr><th>No.</th><th>Karaṇa</th><th>Component Logic</th><th>Epigraphic Correlate</th></tr>
+<tr><td class="no">82</td><td class="name">Ghūrṇita</td><td>A full rotational turn of the body about its own vertical axis, opening the quartile's bhramarī vocabulary directly; commentary specifies the turn as continuous rather than the partial (ardha-) rotations of earlier quartiles.</td><td><span class="site-tag">Chidambaram</span> Rendered via the exaggerated-torsion convention of Vol. I §18; drapery treatment implies rotational momentum.</td></tr>
+<tr><td class="no">89</td><td class="name">Alātaka</td><td>Named for the alāta, the firebrand or torch whose circular swing traces a visible ring when moved quickly — a karaṇa built around a wide, sweeping ākāśikī leg action evoking that same circular after-image.</td><td><span class="site-tag">Tanjavur</span><span class="site-tag">Tiruvannamalai</span> The wide leg-sweep is among the most legible ākāśikī renderings in the corpus, aiding confident cross-site identification.</td></tr>
+<tr><td class="no">95</td><td class="name">Nūpuragrahaṇa? (elevated form)</td><td>An elevated variant building on the grounded ankle-focused vocabulary of the first quartile, now executed from an ākāśikī rather than bhaumī cārī base — the catalogue's own compositional habit of revisiting earlier motifs at higher intensity, discussed structurally at the head of this quartile.</td><td><span class="site-tag">Kumbakonam</span> Identification supported by comparison against the corresponding lower-intensity first-quartile motif on the same facade register.</td></tr>
+<tr><td class="no">101</td><td class="name">[Boundary of the Vṛddhācalam sequence]</td><td>The Vṛddhagiriśvara program (Vol. I, §17) terminates at this point in its own surviving panel sequence; karaṇas 102–108 are absent from that site specifically, a gap addressed directly in Volume I's discussion of the temple's incomplete commission.</td><td><span class="site-tag">Vṛddhācalam</span> Final securely surviving panel in the site's own sequence.</td></tr>
+<tr><td class="no">108</td><td class="name">Vaiśākha</td><td>Closing entry of the entire 108-karaṇa catalogue: a wide, symmetrical, evenly weighted stance, deliberately contrasting the preceding bhramarī-dominated stretch of the fourth quartile and functioning as the sequence's own structural resolution.</td><td><span class="site-tag">Chidambaram</span><span class="site-tag">Tanjavur</span> Positioned at the terminal point of both major sequences; its comparative stability makes it, alongside Talapuṣpapuṭa, one of the two most confidently identified panels in the entire corpus.</td></tr>
+</table>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<h3 class="sec"><span class="num">§25</span> Continuity of the Karaṇas into Contemporary Classical Dance</h3>
+<p>The karaṇa system's afterlife in living practice is neither uniform nor complete across the classical forms that claim descent from Bharata's text, and the honest art-historical account distinguishes carefully between direct structural continuity, partial vocabulary survival, and modern reconstructive revival, rather than presenting all three as equivalent. Bharatanatyam's own foundational adavu vocabulary — the basic combinatorial units of araimaṇḍi (half-seated base), foot strikes, and arm positions that every student learns before advancing to full compositional repertoire — is widely read by dance scholars as a structurally descended, though not verse-for-verse identical, elaboration of the sthāna–cārī–hasta logic §20 describes, transmitted through the guru-śiṣya paramparā of the naṭṭuvanār teaching lineages associated historically with several of the temples examined in Volume I, rather than through direct, continuous, verse-by-verse study of the Nāṭyaśāstra's own fourth chapter, which had itself fallen into substantial practical obscurity by the colonial period before the twentieth-century revival movements associated with figures including Rukmini Devi Arundale restored it to active scholarly and pedagogical attention.</p>
+<p>Kuchipudi's own historical development, rooted in a distinct Andhra devotional and dance-drama tradition rather than in the Tamil temple-sculptural corpus this register centres on, preserves a related but independently evolved relationship to the same Nāṭyaśāstra source material — sharing Bharata's underlying sthāna and cārī vocabulary at a structural level while having developed its own distinct choreographic conventions, including the tarangam and specific narrative sequences not paralleled in the karaṇa-focused pure-nṛtta tradition this register documents. It is specifically Padma Subrahmanyam's own twentieth-century reconstructive research program (Vol. I, §12) that constitutes the most direct and deliberate act of continuity between the epigraphic record and contemporary performance: her identification of specific temple panels with specific numbered karaṇas was undertaken not as a purely archival exercise but explicitly in order to make those identified karaṇas physically re-performable, and her own subsequent choreographic and pedagogical work — developing what she and her students term Bhāratanṛtyam — represents a documented, traceable case in which stone carved eight to nine centuries earlier was read back into a living dancer's trained body, closing, for these specific identified karaṇas at least, the very gap between text, stone, and flesh this entire register has been organised to examine.</p>
+<p>What should not be overstated, in closing, is the completeness of this continuity. The overwhelming majority of contemporary Bharatanatyam and Kuchipudi repertoire is not composed of directly reconstructed, individually identified karaṇas performed in their original Nāṭyaśāstra sequence; it is composed of choreography developed within each tradition's own historically evolved compositional conventions, informed by but not reducible to the karaṇa catalogue examined in this Part. The epigraphic and reconstructive record establishes, with considerable confidence, that the 108 karaṇas were once a living, performed vocabulary, textually defined, commentarially glossed, and monumentally inscribed in stone at five specific Tamil temples across several centuries of continuous royal and devotional patronage — and that a documented, scholarly, and pedagogically active bridge now exists, through Subrahmanyam's and subsequent researchers' work, between that historical record and a present-day dancer's own trained body. It does not establish an unbroken, continuous, century-by-century performance tradition of the complete 108 in their original textual sequence, and this register closes by stating that distinction plainly, in keeping with the evidentiary discipline maintained throughout both volumes.</p>
+
+<footer class="endmatter">
+<h3>Reference Apparatus — Volume II</h3>
+<ol>
+<li>Bharata Muni. <em>Nāṭyaśāstra</em>, Chapter 4, Tāṇḍava Lakṣaṇa — full catalogue of 108 karaṇas and their component sthāna, cārī, and nṛtta-hasta definitions.</li>
+<li>Abhinavagupta. <em>Abhinavabhāratī</em>, commentary resolving compressed root-verse terminology across all four textual quartiles.</li>
+<li>Subrahmanyam, Padma. <em>Karaṇas in Indian Dance Sculpture</em>; doctoral thesis and subsequent monographs establishing panel-by-panel identification across Chidambaram, Tanjavur, and comparative sites, and the Bhāratanṛtyam reconstructive practice built upon that identification.</li>
+<li>Nandikeśvara. <em>Abhinaya Darpaṇa</em> — comparative terminology for sthāna, cārī, and hasta components referenced throughout the quartile tables.</li>
+<li>Vatsyayan, Kapila. <em>The Square and the Circle of the Indian Arts</em> and related studies on the structural logic of the karaṇa sequence and its architectural transposition.</li>
+<li>Site documentation: Archaeological Survey of India temple records and Annual Reports on [South] Indian Epigraphy for the Chidambaram Naṭarāja temple, Brihadīśvara temple (Tanjavur), Sarangapani temple (Kumbakonam), Arunachaleśvara temple (Tiruvannamalai), and Vṛddhagiriśvara temple (Vṛddhācalam).</li>
+<li>Contemporary pedagogical continuity: documented naṭṭuvanār teaching lineages and twentieth-century revival scholarship (Rukmini Devi Arundale and associated Kalakshetra tradition; Padma Subrahmanyam and the Bhāratanṛtyam tradition).</li>
+</ol>
+</footer>
+
+<div class="backlink">
+<b>End of Part X.</b><br>
+Return to Volume I for Foundations, Epigraphy, and the site-by-site Art-Historical treatment (§1–§19).
+</div>
+
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Part X.2 — Epigraphy and the Textual Legacy of the 108 Karaṇas</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+Devanagari:wght@500;700&display=swap');
+  :root{
+    --stone-dark:#1c1712; --stone-mid:#2b241c; --parchment:#efe6d3; --parchment-dim:#cdbfa0;
+    --copper:#b8742f; --vermillion:#9c3a2b; --gold:#c99b45; --rule:#4a3f2f;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--stone-dark);color:var(--parchment);
+    font-family:'EB Garamond', serif; font-size:19px; line-height:1.7;}
+  .wrap{max-width:880px;margin:0 auto;padding:0 28px 140px;}
+  header.masthead{padding:66px 0 38px; text-align:center; border-bottom:1px solid var(--rule); margin-bottom:52px;
+    background:radial-gradient(ellipse at 50% -20%, rgba(184,116,47,0.18), transparent 60%);}
+  .eyebrow{font-family:'Noto Sans Devanagari',serif; letter-spacing:.18em; text-transform:uppercase; color:var(--gold); font-size:13.5px; margin-bottom:12px;}
+  h1.title{font-family:'Cormorant Garamond', serif; font-weight:700; font-size:44px; margin:0 0 10px; color:var(--parchment);}
+  .subtitle{font-family:'Cormorant Garamond', serif; font-style:italic; font-size:21px; color:var(--parchment-dim); max-width:620px; margin:0 auto;}
+  .devanagari{font-family:'Noto Sans Devanagari', serif; color:var(--gold); font-size:24px; display:block; margin-top:12px;}
+  nav.partnav{margin-top:24px; font-size:13.5px; color:var(--parchment-dim); letter-spacing:.04em;}
+  nav.partnav b{color:var(--copper);}
+  .toc{background:var(--stone-mid); border:1px solid var(--rule); border-radius:5px; padding:22px 28px; margin:36px 0 50px;}
+  .toc .lbl{font-size:12.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--vermillion); font-weight:600; margin-bottom:10px;}
+  .toc ol{margin:0; padding-left:20px;}
+  .toc li{margin-bottom:6px; color:var(--parchment-dim); font-size:16px;}
+  .toc li b{color:var(--parchment);}
+  h2.sec{font-family:'Cormorant Garamond', serif; font-weight:700; font-size:31px; color:var(--gold);
+    margin:70px 0 6px; padding-top:16px; border-top:2px solid var(--vermillion); display:flex; gap:16px; align-items:baseline;}
+  h2.sec .num{color:var(--vermillion); font-size:16px; font-family:'EB Garamond',serif; font-weight:600;
+    letter-spacing:.08em; border:1px solid var(--rule); padding:2px 10px; border-radius:2px;}
+  h3.sub{font-family:'Cormorant Garamond', serif; font-weight:600; font-size:22px; color:var(--copper); margin:38px 0 8px;}
+  p{margin:0 0 16px; color:#e6dcc6;}
+  p.lead{color:var(--parchment); font-size:20px;}
+  strong{color:var(--parchment);} em{color:var(--gold); font-style:italic;}
+  blockquote.sloka{margin:22px 0; padding:18px 26px; background:rgba(184,116,47,0.07); border-left:3px solid var(--copper);
+    font-family:'Cormorant Garamond', serif; font-style:italic; font-size:20px; color:var(--parchment-dim);}
+  blockquote.sloka .cite{display:block; margin-top:8px; font-family:'EB Garamond',serif; font-style:normal;
+    font-size:13.5px; letter-spacing:.05em; text-transform:uppercase; color:var(--vermillion);}
+  table{width:100%; border-collapse:collapse; margin:20px 0 30px; font-size:16px;}
+  th{text-align:left; font-family:'Cormorant Garamond',serif; font-weight:700; color:var(--gold);
+    border-bottom:2px solid var(--rule); padding:8px 10px; font-size:14px; letter-spacing:.04em; text-transform:uppercase;}
+  td{padding:9px 10px; border-bottom:1px solid var(--rule); vertical-align:top; color:#e6dcc6;}
+  tr:hover td{background:rgba(184,116,47,0.05);}
+  td.name{color:var(--parchment); font-weight:600;}
+  .divider{text-align:center; margin:52px 0; color:var(--rule); letter-spacing:.5em; font-size:13px;}
+  .callout{margin:24px 0; padding:18px 22px; border:1px solid var(--rule); border-radius:3px; background:var(--stone-mid);}
+  .callout .label{font-size:12.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--vermillion); margin-bottom:8px; display:block; font-weight:600;}
+  ul, ol{margin:0 0 18px; padding-left:26px; color:#e6dcc6;} li{margin-bottom:8px;}
+  footer.endmatter{margin-top:90px; padding-top:34px; border-top:1px solid var(--rule); font-size:14.5px; color:var(--parchment-dim);}
+  footer.endmatter h3{font-family:'Cormorant Garamond',serif; color:var(--gold); font-size:20px; margin-bottom:14px;}
+  footer.endmatter ol{padding-left:22px;} footer.endmatter li{margin-bottom:9px; line-height:1.5;}
+  .nextpart{margin-top:70px; text-align:center; padding:24px; border:1px dashed var(--rule); border-radius:4px; color:var(--parchment-dim); font-size:15px;}
+  .nextpart b{color:var(--gold); font-family:'Cormorant Garamond',serif; font-size:19px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <div class="eyebrow">Series · Śāstra &amp; Stone · Part X, Section Two of Four</div>
+  <h1 class="title">Epigraphy and the<br>Textual Legacy</h1>
+  <p class="subtitle">From Grantha-script temple record to Abhinavagupta's commentary to Padma Subrahmanyam's twentieth-century reconstruction: the chain of witnesses standing between Bharata's compressed verse and a legible physical instruction.</p>
+  <span class="devanagari">शिलालेखीय एवं ग्रन्थ-परम्परा-विवरणम्</span>
+  <nav class="partnav">Standalone Part 2 of 4 — Epigraphy &amp; Textual Legacy · (Part 1: Foundations · Part 3: Art History · Part 4: The Catalogue)</nav>
+</header>
+
+<p class="lead">The karaṇa system survives through three distinct kinds of evidence, each with its own limitations: the root Nāṭyaśāstra verses, terse to the point of requiring a trained physical vocabulary to parse at all; the commentarial tradition, chiefly Abhinavagupta's Abhinavabhāratī, that resolves much of that terseness in prose; and the epigraphic and sculptural record examined fully in Part Three, which in specific instances preserves physical detail the textual record alone does not fully specify. This Part is concerned with the first two of these three witnesses, and with the inscriptional environment — Grantha-script Sanskrit temple epigraphy specifically — within which the karaṇa program's own historical reality as a living, endowed, ritually performed practice can be independently confirmed.</p>
+
+<div class="toc">
+<div class="lbl">Contents of Part Two</div>
+<ol>
+<li><b>§7</b> The Role of Grantha Script in Temple Inscriptions</li>
+<li><b>§8</b> Deciphering Abhinavagupta's <em>Abhinavabhāratī</em> Commentary</li>
+<li><b>§9</b> Short Pithy Verses (Sūtras) for Movement Instructions</li>
+<li><b>§10</b> Comparative Study — <em>Abhinaya Darpaṇa</em> and <em>Saṅgīta Ratnākara</em></li>
+<li><b>§11</b> Structural Mapping of the 108 Kinetic Units</li>
+<li><b>§12</b> Modern Textual Reconstructions — The Padma Subrahmanyam Methodology</li>
+</ol>
+</div>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<h2 class="sec"><span class="num">§7</span> The Role of Grantha Script in Temple Inscriptions</h2>
+
+<h3 class="sub">7.1 — Grantha as the Script of Sanskrit in a Tamil Epigraphic Environment</h3>
+<p>Grantha script developed specifically to render Sanskrit — a language whose phonemic inventory the Tamil script cannot fully represent — within a Tamil-speaking cultural region, and its presence on a South Indian temple wall is itself a marker of registers: Grantha-script inscriptions typically carry Sanskrit liturgical, dedicatory, or śāstric content, while Tamil-script inscriptions on the same walls typically carry administrative, donative, and vernacular devotional content, including much of the detailed record of land grants, dancer endowments, and festival calendars. A single temple's epigraphic corpus is accordingly biscriptural by design, not by inconsistency, and reading the karaṇa program's own inscriptional context correctly requires attending to which script a given inscription uses, since that choice itself signals what kind of content — and what kind of authority — the inscription is claiming.</p>
+
+<h3 class="sub">7.2 — What the Karaṇa Panels Do and Do Not Carry Inscriptionally</h3>
+<p>With the significant exception of Chidambaram, examined fully in Part Three, the karaṇa panels themselves are not, at most of the five sites this register treats, individually accompanied by inscriptional labels naming the specific karaṇa depicted. The panels function primarily as visual rather than textual documents, and where a labelling convention does survive — as it does, distinctively, at Chidambaram's own eastern gopuram — it should be treated as an exceptional rather than a typical feature of the broader corpus, one that happens to make Chidambaram unusually valuable as a calibration site for identifying karaṇas at the other, unlabelled locations.</p>
+
+<h3 class="sub">7.3 — Donative and Dedicatory Inscriptions as Indirect Evidence</h3>
+<p>The Grantha-script epigraphic record relevant to the karaṇa program is, in the majority of cases, indirect rather than direct: donative inscriptions recording temple grants, dedicatory inscriptions recording the endowment of dancers and musicians attached to specific ritual occasions, and administrative inscriptions recording the salaries, land grants, and ritual obligations of the devadāsī institution associated with several of these temples' historical liturgical practice. These inscriptions do not gloss individual panels, but they establish something the sculptural evidence alone cannot: that karaṇa-vocabulary dance was, during the same centuries the sculptural programs were commissioned, an actively maintained and formally endowed ritual practice, rather than an antiquarian reference to a textual tradition already dormant in actual performance at the time of carving.</p>
+
+<h3 class="sub">7.4 — Chidambaram's Specific Inscriptional Record of Ritual Tāṇḍava</h3>
+<p>Chidambaram's own epigraphic corpus includes inscriptional references, in Grantha-script Sanskrit, to ritual tāṇḍava performance connected directly to the temple's liturgical calendar — evidence that positions the temple's karaṇa sculptural program not as a freestanding didactic display disconnected from actual practice, but as the architectural counterpart of a dance that was, at the time of the gopuram's construction, still being performed within the temple's own precincts as part of its regular ritual life. This inscriptional confirmation is the strongest available evidence, across the entire corpus this register treats, for reading the sculptural karaṇa programs as documents of living practice rather than purely antiquarian or purely theological display.</p>
+
+<h3 class="sub">7.5 — Paleographic Dating as a Cross-Check on Sculptural Chronology</h3>
+<p>Because Grantha-script paleography has its own well-developed internal chronology — letterform changes datable with reasonable confidence across the centuries spanning the Chola through Vijayanagara-successor periods relevant to this register's five sites — the epigraphic record supplies an independent dating cross-check against the art-historical and architectural dating evidence examined in Part Three. Where an inscription's own paleographic date can be established with confidence and can be shown to belong to the same building campaign as an adjacent karaṇa panel, the inscriptional evidence supplies a firmer chronological anchor than architectural style alone can offer, a methodological point this register relies on wherever available throughout Part Three's site-by-site treatment.</p>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<h2 class="sec"><span class="num">§8</span> Deciphering Abhinavagupta's <em>Abhinavabhāratī</em></h2>
+
+<h3 class="sub">8.1 — Kashmir Śaivism and a Geographically Displaced Commentarial Tradition</h3>
+<p>Abhinavagupta composed the Abhinavabhāratī in Kashmir during the tenth to eleventh century, several centuries after Bharata's own root text and at a substantial geographic remove from the Tamil temple sites this register is chiefly concerned with. This displacement is methodologically significant rather than merely biographical: it means the interpretive tradition later Tamil sculptural workshops and dance masters drew upon to read the karaṇa chapter had already, by the time it reached South India, absorbed several centuries of Kashmir Śaiva philosophical and exegetical habits, and any reading of a South Indian sculptural panel against Abhinavagupta's commentary must account for this transmission distance rather than treating the commentary as a transparent, unmediated window onto Bharata's own original intent.</p>
+
+<h3 class="sub">8.2 — The Commentary's Characteristic Exegetical Method</h3>
+<p>Abhinavagupta's method with the karaṇa chapter specifically is exegetical rather than purely lexical: where Bharata's compressed root verse names a sthāna and cārī in minimal technical shorthand, the Abhinavabhāratī typically supplies the fuller physical elaboration a practising reader would require to execute the movement correctly — clarifying which of the sixteen cārīs an ambiguous verse-reference invokes, resolving compound technical terms capable of denoting more than one recognised sthāna, and, in a number of documented instances, flagging or correcting manuscript variants where the root text's own transmission had become corrupt by the time it reached him.</p>
+
+<h3 class="sub">8.3 — Resolving Underdetermination in the Root Verses</h3>
+<p>A significant proportion of the 108 root-text definitions are, considered purely as written instructions independent of commentary, underdetermined: a compressed technical term may, absent Abhinavagupta's gloss, be compatible with more than one specific cārī or sthāna from the broader inventories established in Part One. This underdetermination is not a flaw in Bharata's own text so much as a direct consequence of the sūtra-style compression examined in §9 below — the root verse was never intended to function without an already-trained reader's own physical knowledge supplying the missing specificity, and Abhinavagupta's commentary functions, for the modern or geographically distant reader, as a substitute for that missing embodied context.</p>
+
+<h3 class="sub">8.4 — Why Modern Reconstruction Treats the Commentary as Indispensable</h3>
+<p>Because the root verses are, in a significant number of cases, insufficient on their own to fix a single, unambiguous physical identification, the modern reconstruction methodology examined fully in §12 treats Abhinavagupta's commentary as a required second textual witness alongside the root text, not as an optional supplementary aid. A proposed sculptural identification that is compatible with the root verse but incompatible with Abhinavagupta's specific gloss is treated, throughout this register, as insecure, since the commentary represents the earliest systematic attempt to resolve exactly the ambiguity a bare root-verse reading leaves open.</p>
+
+<h3 class="sub">8.5 — Manuscript Variants and the Limits of Textual Certainty</h3>
+<p>Abhinavagupta's own documented practice of flagging manuscript variants within the karaṇa chapter is itself evidence that the root text's transmission was not perfectly stable even by his own time, several centuries before the earliest of the sculptural programs this register examines. This has a direct methodological consequence: where a specific karaṇa's root-verse wording is itself contested across surviving manuscript traditions, no sculptural identification for that karaṇa can be treated as more secure than the underlying textual evidence allows, and this register flags such cases explicitly wherever they arise in Part Four's catalogue treatment, rather than presenting a false uniformity of textual certainty across all 108 entries.</p>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<h2 class="sec"><span class="num">§9</span> Short Pithy Verses (Sūtras) for Movement Instructions</h2>
+
+<h3 class="sub">9.1 — Sūtra Style as a Distinct Compositional Register</h3>
+<p>The compositional register of Chapter Four sits closer to sūtra literature's own extreme compression — the style associated with grammatical, ritual, and philosophical aphorism across the wider Sanskrit textual tradition — than to the fuller descriptive verse found elsewhere in the Nāṭyaśāstra's own more expansive chapters on rasa, bhāva, and dramatic production. Each karaṇa definition is compressed to the smallest verse unit capable of naming its three obligatory components, trading descriptive completeness for mnemonic and recitational efficiency, a trade-off characteristic of sūtra composition generally and not unique to the dance-technical content of this specific chapter.</p>
+
+<h3 class="sub">9.2 — Compression as a Feature of Oral-Textual Transmission Culture</h3>
+<p>This terseness served a specific and identifiable transmission function within a culture in which the fourth chapter needed to be memorised and orally transmitted from a guru to a student's own trained body, rather than merely consulted as silent written reference. A compact couplet is retrievable from memory during an active teaching session in a way a fuller descriptive paragraph is not, and the verse's own brevity is best understood as designed specifically for a pedagogical situation in which the verse functions as a retrieval cue for physical knowledge already substantially held in the body, activated and confirmed by the guru's own direct correction, rather than as a self-sufficient written instruction adequate for an untrained reader working in isolation from a living teacher.</p>
+
+<h3 class="sub">9.3 — The Consequence for Weighting Textual against Sculptural Evidence</h3>
+<p>Because the root verses are compressed to the point of presupposing an already-trained reader, a sculptural panel — carved, per the inscriptional evidence of §7, plausibly under the direct or indirect guidance of a practising dance master rather than by a sculptor working from the text alone — may in specific instances preserve physical detail the terse root verse does not itself fully specify. This is the basis for treating the stone not merely as an illustration subordinate to the text, but, in carefully qualified instances, as a supplementary physical witness capable of filling gaps the sūtra-style verse leaves genuinely open, a methodological stance this register applies cautiously and only where the sculptural evidence across multiple independent sites converges on the same physical detail.</p>
+
+<h3 class="sub">9.4 — A Worked Illustration of the Compression Problem</h3>
+<p>Consider the general shape of a typical root-verse definition: a single or double verse naming a sthāna by a one- or two-word technical term, a cārī by a comparably compressed term, and a nṛtta-hasta pairing in similarly minimal form, with no accompanying descriptive elaboration of how these three named components are to be physically coordinated in time. A reader unfamiliar with the sixteen-cārī inventory of Part One, §2.3, or with the sthāna taxonomy of Part One, §2.2, cannot reconstruct the intended movement from the verse's bare technical vocabulary alone — precisely the situation Abhinavagupta's commentary (§8) exists to remedy, and precisely the situation in which convergent sculptural evidence across independent sites, where available, becomes methodologically valuable rather than merely decorative.</p>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<h2 class="sec"><span class="num">§10</span> Comparative Study: <em>Abhinaya Darpaṇa</em> and <em>Saṅgīta Ratnākara</em></h2>
+
+<h3 class="sub">10.1 — The <em>Abhinaya Darpaṇa</em> as a More Accessible Restatement</h3>
+<p>Nandikeśvara's Abhinaya Darpaṇa, compiled considerably later than the Nāṭyaśāstra though drawing on the same broad textual family, restates a substantial portion of the karaṇa-adjacent movement vocabulary in a more accessible, less compressed idiom than Bharata's own sūtra-style chapter. The text is documented as having served, more directly than Bharata's own root text, as the working manual actually consulted by later generations of practising dance masters, including within the Tamil devadāsī and naṭṭuvanār teaching lineages historically associated with several of the temples examined in Part Three — a fact that gives the Abhinaya Darpaṇa's own restatements independent evidentiary weight as a record of how the karaṇa-adjacent vocabulary was actually being taught and transmitted in the centuries closer to, and in some cases overlapping with, the sculptural programs' own construction.</p>
+
+<h3 class="sub">10.2 — Points of Divergence and What They Signify</h3>
+<p>Where the Abhinaya Darpaṇa's own treatment of related movement categories diverges from Bharata's fourth chapter — as it does at several specific points, particularly in nomenclature and in the internal ordering of certain cārīs — the divergence should not be read as a simple error in one text or the other. It is better read as evidence of a living, regionally adapted transmission tradition continuing to develop after the Nāṭyaśāstra's own compilation, consistent with the mārgi/deśī framework established in Part One, §3: the core karaṇa definitions remain stable across both texts (the mārgi layer), while surrounding terminology and pedagogical framing shows the kind of regional and temporal drift (the deśī layer) the framework predicts. Comparative readings across the two sources are frequently what allow a modern reconstructor to resolve an otherwise ambiguous root verse, since the Abhinaya Darpaṇa's fuller restatement can supply context Bharata's own compression omits.</p>
+
+<h3 class="sub">10.3 — The <em>Saṅgīta Ratnākara</em> and the Missing Rhythmic Dimension</h3>
+<p>Śārṅgadeva's thirteenth-century Saṅgīta Ratnākara, composed in the Deccan under Yādava patronage, supplies a different and equally necessary comparative control: it is the major post-Bharata text to treat dance systematically alongside music, and crucially alongside a fully developed theory of tāla, the rhythmic-cycle framework governing the precise temporal placement of karaṇa execution that Bharata's own fourth chapter treats considerably less explicitly. A comparative reader consulting the Saṅgīta Ratnākara can check whether Bharata's own comparatively terse treatment of rhythmic placement is consistent with the more elaborated rhythmic theory Śārṅgadeva later supplies, filling a further gap the root text's own sūtra-style compression leaves open.</p>
+
+<h3 class="sub">10.4 — Chronological Caution: A Later Text Cannot Transparently Gloss an Earlier One</h3>
+<p>Because the Saṅgīta Ratnākara postdates Bharata by many centuries and reflects its own Deccan-regional synthesis of music and dance theory, it cannot be read as a transparent, unmediated gloss on the Nāṭyaśāstra's original intent — a caution directly parallel to the one established for Abhinavagupta's own Kashmir-composed commentary in §8.1. What the Saṅgīta Ratnākara remains indispensable for is narrower and more historically specific: evidence for how the karaṇa–tāla relationship was understood in precisely the historical window immediately preceding the major Tamil temple-building programs examined in Part Three, supplying the closest available comparative snapshot of dance-theoretical understanding contemporaneous with, or shortly antecedent to, the sculptural projects this register documents.</p>
+
+<h3 class="sub">10.5 — Using the Three Texts as a Triangulated Comparative Set</h3>
+<p>Taken together, Bharata's root text, Abhinavagupta's commentary, and the two later comparative texts examined in this section form a four-point evidentiary set spanning roughly a millennium of textual transmission, each text supplying a different kind of missing information: the root text names the closed 108-item inventory itself; Abhinavagupta's commentary resolves its compressed terminology; the Abhinaya Darpaṇa supplies a more accessible restatement closer to later practical pedagogy; and the Saṅgīta Ratnākara supplies the rhythmic-theoretical elaboration the root text under-specifies. This four-point triangulation is the textual half of the fuller triangulated identification method examined in §12, which adds the sculptural record itself as a fifth, independent line of evidence.</p>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<h2 class="sec"><span class="num">§11</span> Structural Mapping of the 108 Kinetic Units</h2>
+
+<h3 class="sub">11.1 — The Catalogue's Order Is Not Random</h3>
+<p>The sequence in which Bharata names the 108 karaṇas in the root text is not arbitrary or alphabetical; it tracks, in significant part, the sequence in which the same karaṇas are subsequently deployed across the thirty-two aṅgahāras enumerated later in the same chapter, so that the catalogue functions simultaneously as a definitional glossary and as an implicit index into the larger compositional units built from it. Establishing this structural fact is a necessary precondition for the quartile-based organisation Part Four adopts throughout its own catalogue treatment, since it confirms that dividing the 108 into four sequential groups of twenty-seven tracks a genuine internal textual structure rather than imposing an artificial division on an undifferentiated list.</p>
+
+<h3 class="sub">11.2 — Sequence-Mapping as an Epigraphic Diagnostic Tool</h3>
+<p>This structural fact has a direct methodological consequence for reading the temple sculptural programs examined in Part Three: where a gopuram or vimāna preserves its karaṇa panels in an order matching, or closely approximating, the Nāṭyaśāstra's own textual sequence, the architectural program is best read as a direct spatial transposition of the textual catalogue, tier by tier up the gopuram's own vertical structure standing in for verse by verse down the manuscript page. Where a site's panel sequence instead departs from the textual order, the departure becomes itself diagnostic evidence about the sculptural program's own compositional priorities — whether iconographic pairing with adjacent narrative panels, the physical constraints of the gopuram's own tier divisions, or, in at least one documented case, an incomplete rather than a deliberately reordered commission.</p>
+
+<h3 class="sub">11.3 — Establishing a Reference Sequence Against Which Sites Are Compared</h3>
+<p>Because Chidambaram's own inscriptional labelling (§7.2) makes its panel sequence the most securely established of the five sites this register treats, it functions throughout Part Three as the reference sequence against which the other four sites' own panel orderings are compared, a methodological choice this Part establishes and Part Three applies directly. This is not a claim that Chidambaram's own sequence is necessarily more textually faithful than the other sites' in some absolute sense, only that it is currently the most confidently reconstructable, and therefore the most useful available baseline for comparative purposes.</p>
+
+<h3 class="sub">11.4 — The Aṅgahāra as the Unit of Sequence, Not the Karaṇa Alone</h3>
+<p>A further refinement to the structural mapping concerns the level at which sequence-fidelity should be assessed. Because an aṅgahāra is a fixed sequence of specific karaṇas (Part One, §4.2–4.3), a site's panel-to-panel sequence should ideally be checked not merely against the flat 108-item textual list, but against the finer-grained sequence internal to each of the thirty-two aṅgahāras individually — a more demanding standard of comparison this register notes as the appropriate long-term goal for the field, while acknowledging that the currently available epigraphic and reconstructive scholarship has, for most sites, established confident correspondence chiefly at the coarser, catalogue-order level rather than at the full aṅgahāra-internal level.</p>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<h2 class="sec"><span class="num">§12</span> Modern Textual Reconstructions: The Padma Subrahmanyam Methodology</h2>
+
+<h3 class="sub">12.1 — The Triangulation Principle</h3>
+<p>The single most consequential modern contribution to reading the karaṇa chapter against its sculptural evidence is the sustained doctoral and subsequent decades-long research program of Dr. Padma Subrahmanyam, whose method established a specific, replicable procedure for identifying a given temple panel with a specific numbered karaṇa in Bharata's list. The method proceeds by triangulation rather than by visual resemblance alone: a candidate panel is checked against the root verse's named sthāna and cārī components, against Abhinavagupta's commentarial gloss resolving any ambiguous terminology in that verse, and against the panel's own physical configuration of base, torso, and limb positions — with a positive identification withheld unless the sculptural evidence and the textual-commentarial evidence converge on the same named karaṇa rather than merely being compatible with it.</p>
+
+<h3 class="sub">12.2 — Why Convergence, Rather than Compatibility, Is the Required Standard</h3>
+<p>The distinction between mere compatibility and genuine convergence is methodologically decisive. A given sculptural panel's physical configuration will frequently be compatible with more than one candidate karaṇa from the root text's own inventory, particularly among karaṇas sharing a similar sthāna and cārī but differing chiefly in a recaka detail (Part One, §2.5, §5.1) that may be difficult to render or preserve clearly in weathered stone. Compatibility alone, in such cases, cannot distinguish between the genuine identification and a plausible but incorrect alternative; only convergence — the textual-commentarial evidence and the sculptural evidence independently pointing to the same specific entry — meets the standard Subrahmanyam's method requires before a panel is treated as securely identified.</p>
+
+<h3 class="sub">12.3 — The Discovery of the Brihadīśvara Cycle as a Direct Application</h3>
+<p>This triangulated method is what allowed Subrahmanyam to propose systematic, panel-by-panel identifications across the Chidambaram gopuram program and, significantly, to recognise the long-overlooked Brihadīśvara vimāna reliefs at Tanjavur — examined fully in Part Three — as a second, independent, and near-complete 108-karaṇa cycle. The Tanjavur panels' considerable height on the vimāna's upper tiers had previously discouraged the sustained close-range documentation their identification required, and it was specifically the availability of a secure, triangulated identification method, rather than improved physical access alone, that allowed the Tanjavur cycle to be connected confidently to the Nāṭyaśāstra's own catalogue once that access was achieved.</p>
+
+<h3 class="sub">12.4 — From Identification to Re-Performance</h3>
+<p>A further, methodologically distinct strand of Subrahmanyam's scholarship involved the practical reconstruction and re-performance of individually identified karaṇas within her own subsequent Bharatanatyam and Bhāratanṛtyam practice, treating the sculptural evidence not merely as an art-historical artefact to be catalogued but as a physically re-enactable record. This extension from identification to re-performance is what gives the karaṇa system's modern scholarly recovery its distinctive character relative to comparable epigraphic-reconstruction projects in other fields: the end product of the research is not only a published identification but a living, trained body capable of executing the identified movement, a point developed with its fuller implications in Part Four's closing discussion of continuity into contemporary classical dance.</p>
+
+<h3 class="sub">12.5 — Limits of the Method the Register Continues to Observe</h3>
+<p>Not every one of the 108 karaṇas has, at the time of this register's compilation, been identified with equal confidence across every one of the five sites examined in Part Three; the triangulation standard set out in 12.1–12.2 necessarily yields secure identifications for some entries and remains inconclusive for others, particularly where root-verse ambiguity (§8.3), manuscript variance (§8.5), or panel weathering combine to prevent genuine convergence. This register's own catalogue treatment in Part Four follows Subrahmanyam's own methodological discipline directly: presenting secure identifications with confidence, presenting contested or unresolved identifications as such, and declining to manufacture false uniform certainty across all 108 entries where the underlying textual and sculptural evidence does not currently support it.</p>
+
+<footer class="endmatter">
+<h3>Reference Apparatus — Part Two</h3>
+<ol>
+<li>Bharata Muni. <em>Nāṭyaśāstra</em>, Chapter 4, Tāṇḍava Lakṣaṇa — root verses examined throughout for their compressed, sūtra-style compositional register.</li>
+<li>Abhinavagupta. <em>Abhinavabhāratī</em>, commentary on Nāṭyaśāstra Ch. 4, Kashmir, c. 10th–11th century — the primary commentarial witness examined in §8.</li>
+<li>Nandikeśvara. <em>Abhinaya Darpaṇa</em> — comparative restatement of karaṇa-adjacent vocabulary examined in §10.1–10.2.</li>
+<li>Śārṅgadeva. <em>Saṅgīta Ratnākara</em>. Deccan, 13th century, Yādava patronage — comparative tāla and rhythmic theory examined in §10.3–10.4.</li>
+<li>Subrahmanyam, Padma. <em>Karaṇas in Indian Dance Sculpture</em> — doctoral thesis and subsequent monographs establishing the triangulated identification method examined throughout §12.</li>
+<li>Epigraphic corpus: Grantha and Tamil inscriptions of the five temples examined in Part Three, as recorded in the Annual Reports on [South] Indian Epigraphy and subsequent Archaeological Survey of India temple documentation, cited throughout §7.</li>
+</ol>
+</footer>
+
+<div class="nextpart">
+<b>Continue to Part Three.</b><br>
+Art History and Iconography — Chidambaram, Tanjavur, Kumbakonam, Tiruvannamalai, and Vṛddhācalam, site by site.
+</div>
+</body>
+</html>
+
+
+
+
+
+
